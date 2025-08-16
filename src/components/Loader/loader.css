@@ -1,0 +1,44 @@
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background: #ffffff;
+}
+
+.loader-logo {
+  width: 200px; /* BIG logo */
+  margin-bottom: 40px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.progress-container {
+  width: 300px;
+  height: 12px;
+  background: #e9ecef;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  transition: width 0.2s ease-in-out;
+}
+
+.progress-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #007bff;
+}

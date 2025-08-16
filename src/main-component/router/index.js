@@ -40,7 +40,6 @@ const AllRoute = () => {
 
   return (
     <div className="App">
-      <BrowserRouter>
         <Routes>
           <Route exact path='/' element={<Homepage3 />} />
           <Route path='/home' element={<Homepage/>} />
@@ -80,7 +79,6 @@ const AllRoute = () => {
           <Route path='/register' element={<SignUpPage />} />
           <Route path='/forgot-password' element={<ForgotPassword />} /> */}
         </Routes>
-      </BrowserRouter>
     </div>
   );
 }
