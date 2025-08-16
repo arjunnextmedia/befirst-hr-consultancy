@@ -15,7 +15,7 @@ const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 5000); // loader lasts until progress bar finishes
+    }, 5000);
     return () => clearTimeout(timer);
   }, []);
 
