@@ -4,7 +4,7 @@ import BlogSidebar from '../BlogSidebar/blog1';
 
 import blog1 from '../../images/blog/blog-868x514-1.jpg';
 import blog6 from '../../images/blog-details/author.jpg';
-import gl1 from '../../images/blog/img-3.jpg';
+import gl1 from '../../images/blog/blog-sub1-img.jpg';
 import gl2 from '../../images/blog/img-2.jpg';
 import Footer from '../footer';
 import Navbar2 from '../Navbar2';
@@ -114,7 +114,7 @@ const BlogSingle1 = (props) => {
                                         <img src={gl1} alt="Team at Work" />
                                     </div>
                                     <div>
-                                        <img src={gl2} alt="Office Culture" />
+                                        <img src="https://img.freepik.com/premium-photo/marketing-te…king-laptop-screen-talking_658385-1371.jpg?w=1480" alt="Office Culture" />
                                     </div>
                                 </div>
 
