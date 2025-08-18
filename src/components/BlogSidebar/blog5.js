@@ -74,40 +74,49 @@ const BlogSidebar5 = (props) => {
                         </div> */}
                         <div className="post">
                             <div className="img-holder">
-                                <img src={blog1} alt="blog1" />
+                                <img src={blog1} alt="" />
                             </div>
                             <div className="details">
-                                <h4><Link onClick={ClickHandler} to="/blog-single">Why Outsourcing Recruitment Can Save You Time & Money – Benefits of Recruitment Outsourcing in Kerala</Link></h4>
+                                <h4><Link onClick={ClickHandler} to="/blog-details/blog1">How SMEs Can Build a Strong Employer Brand in Kerala</Link></h4>
+                                <span className="date">19 Jun 2021 </span>
+                            </div>
+                        </div>
+                        <div className="post">
+                            <div className="img-holder">
+                                <img src={blog2} alt="" />
+                            </div>
+                            <div className="details">
+                                <h4><Link onClick={ClickHandler} to="/blog-details/blog2">Why Outsourcing Recruitment Can Save You Time & Money – Benefits of Recruitment Outsourcing in Kerala</Link></h4>
                                 <span className="date">22 May 2021 </span>
                             </div>
                         </div>
                         <div className="post">
                             <div className="img-holder">
-                                <img src={blog2} alt="blog2" />
+                                <img src={blog3} alt="" />
                             </div>
                             <div className="details">
-                                <h4><Link onClick={ClickHandler} to="/blog-single">Top 10 Payroll Mistakes SMEs in Kerala Must Avoid</Link></h4>
+                                <h4><Link onClick={ClickHandler} to="/blog-details/blog3">Top 10 Payroll Mistakes SMEs in Kerala Must Avoid</Link></h4>
                                 <span className="date">12 Apr 2021 </span>
                             </div>
                         </div>
                         <div className="post">
                             <div className="img-holder">
-                                <img src={blog3} alt="blog3" />
+                                <img src={blog4} alt="" />
                             </div>
                             <div className="details">
-                                <h4><Link onClick={ClickHandler} to="/blog-single">The Complete Guide to HR Compliance in Kerala</Link></h4>
+                                <h4><Link onClick={ClickHandler} to="/blog-details/blog4">The Complete Guide to HR Compliance in Kerala</Link></h4>
                                 <span className="date">12 Apr 2021 </span>
                             </div>
                         </div>
-                        <div className="post">
+                        {/* <div className="post">
                             <div className="img-holder">
-                                <img src={blog4} alt="blog4" />
+                                <img src={blog5} alt="" />
                             </div>
                             <div className="details">
-                                <h4><Link onClick={ClickHandler} to="/blog-single">How to Choose the Right HR Consultancy in Calicut</Link></h4>
+                                <h4><Link onClick={ClickHandler} to="/blog-details/blog5">How to Choose the Right HR Consultancy in Calicut</Link></h4>
                                 <span className="date">12 Apr 2021 </span>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 {/* <div className="widget wpo-instagram-widget">

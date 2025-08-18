@@ -4,15 +4,15 @@ import Hero3 from '../../components/hero3'
 import Features from '../../components/Features'
 import About from '../../components/about'
 import Services2 from '../../components/Services2'
-import Pricing from '../../components/Pricing'
-import FunFact from '../../components/FunFact'
-import Projects from '../../components/Projects'
-import Testimonial from '../../components/Testimonial'
+// import Pricing from '../../components/Pricing'
+// import FunFact from '../../components/FunFact'
+// import Projects from '../../components/Projects'
+// import Testimonial from '../../components/Testimonial'
 import Support from '../../components/Support'
 import BlogSection from '../../components/BlogSection'
 import Footer from '../../components/footer'
-import Scrollbar from '../../components/scrollbar'
-import CoreValues from '../../components/CoreValues';
+// import Scrollbar from '../../components/scrollbar'
+// import CoreValues from '../../components/CoreValues';
 
 
 const HomePage3 =() => {

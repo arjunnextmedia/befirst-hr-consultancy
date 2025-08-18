@@ -71,7 +71,7 @@ const AllBlogSidebar = (props) => {
                                 <img src={blog1} alt="" />
                             </div>
                             <div className="details">
-                                <h4><Link onClick={ClickHandler} to="/blog-single">How SMEs Can Build a Strong Employer Brand in Kerala</Link></h4>
+                                <h4><Link onClick={ClickHandler} to="/blog-details/blog1">How SMEs Can Build a Strong Employer Brand in Kerala</Link></h4>
                                 <span className="date">19 Jun 2021 </span>
                             </div>
                         </div>

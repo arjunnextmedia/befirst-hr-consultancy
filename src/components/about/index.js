@@ -1,10 +1,10 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import abimg from '../../images/home/about-img.jpg'
+import abimg from '../../images/home/about-home-img.jpg'
 import spimg1 from '../../images/ab-shape-1.png'
 import spimg2 from '../../images/ab-shape-2.png'
 import spicon from '../../images/icon/badge.svg'
-import sign from '../../images/signeture.png'
+// import sign from '../../images/signeture.png'
 
 
 const About = (props) => {

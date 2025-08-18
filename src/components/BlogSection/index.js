@@ -50,6 +50,7 @@ const BlogSlider = () => {
                   <h4 className="blog-title">
                     <Link onClick={ClickHandler} to={blog.link}>{blog.title}</Link>
                   </h4>
+                  <p className="blog-description">{blog.description}</p>
                   <p className="blog-date">{blog.time}</p>
                   <Link
                     onClick={ClickHandler}
