@@ -15,16 +15,16 @@ const BlogSingle3 = (props) => {
         e.preventDefault();
     };
 
-      const bulletList = {
-    paddingLeft: "20px",
-    marginBottom: "15px",
-    listStyleType: "disc",
-  };
+    const bulletList = {
+        paddingLeft: "20px",
+        marginBottom: "15px",
+        listStyleType: "disc",
+    };
 
     return (
         <>
-               <Navbar2/>
-                    <PageTitle pageTitle={'Blog Details'} pagesub1={'Blogs'} pagesub2={'Blog Details'}/> 
+            <Navbar2 />
+            <PageTitle pageTitle={'Article Details'} pagesub1={'Articles'} pagesub2={'Article Details'} />
             <section className="wpo-blog-single-section section-padding">
                 <div className="container">
                     <div className="row">
@@ -46,10 +46,19 @@ const BlogSingle3 = (props) => {
 
                                     <h2>Top 10 Payroll Mistakes SMEs in Kerala Must Avoid</h2>
                                     <p>
+                                        <strong>
+                                            Keyword: </strong>
+                                        payroll mistakes Kerala SMEs
+                                    </p>
+                                    <p>
                                         Managing payroll can be one of the most challenging responsibilities for small and medium enterprises (SMEs) in Kerala. Even the slightest error can lead to compliance issues, financial losses, and unhappy employees — all of which can hurt business growth. Unfortunately, many SMEs fall into the same payroll traps over and over again.
                                     </p>
                                     <p>
-                                        In this article, we’ll break down the top 10 payroll mistakes Kerala SMEs must avoid — and how Befirst HR & Management Consultancy can help you stay compliant, accurate, and stress-free.
+                                        In this article, we’ll break down the
+                                        <strong> top 10 payroll mistakes Kerala SMEs must avoid
+                                        </strong> — and how
+                                        <strong> Befirst HR & Management Consultancy </strong>
+                                        can help you stay compliant, accurate, and stress-free.
                                     </p>
 
                                     <h3>1. Misclassifying Employees</h3>
@@ -110,7 +119,9 @@ const BlogSingle3 = (props) => {
                                     <p>
                                         Managing payroll without expertise can lead to costly mistakes and compliance risks.
                                     </p>
-                                    <p><strong>Solution:</strong> Outsource payroll to a trusted HR consultancy in Calicut like Befirst HR & Management Consultancy to save time, reduce risk, and focus on growth.</p>
+                                    <p><strong>Solution:</strong> Outsource payroll to a trusted HR consultancy in Calicut like
+                                        <strong> Befirst HR & Management Consultancy  </strong>
+                                        to save time, reduce risk, and focus on growth.</p>
 
                                     <div className="gallery">
                                         <div>
@@ -122,20 +133,45 @@ const BlogSingle3 = (props) => {
                                     </div>
 
                                     <h3>Why Befirst HR & Management Consultancy is the Right Partner for Kerala SMEs</h3>
+                                    <p>
+                                        With over
+                                        <strong> 40 years of leadership experience </strong>  in HR and people management, our team at Befirst HRM ensures your payroll is compliant, accurate, and stress-free. From
+                                        <strong> EPF and ESI management </strong>  to <strong> statutory compliance and salary structuring, </strong>  we help you avoid costly payroll mistakes and focus on scaling your business.
+                                    </p>
                                     <ul style={bulletList}>
                                         <li>Reduce compliance risks</li>
                                         <li>Ensure timely, error-free payments</li>
                                         <li>Save time and operational costs</li>
                                     </ul>
-                                    <p>
+                                    {/* <p>
                                         With over 40 years of leadership experience in HR and people management, Befirst HRM ensures your payroll is compliant, accurate, and stress-free. From EPF and ESI management to statutory compliance and salary structuring, we help you avoid costly payroll mistakes and focus on scaling your business.
-                                    </p>
+                                    </p> */}
 
+                                    <h3>Ready to avoid payroll mistakes?</h3>
+                                    <p>Don’t let payroll errors slow down your business growth.</p>
                                     <blockquote>
-                                        Ready to avoid payroll mistakes? <br />
-                                        📞 Call us at +91 9400905954 <br />
-                                        📧 Email: info@befirsthrm.com <br />
-                                        🌐 Visit: www.befirsthrm.com
+                                        <h3>Contact Befirst HR & Management Consultancy today — Your trusted HR partner in Calicut.</h3>
+                                        <br />
+                                        <p style={{ marginBottom: '0px' }}>
+                                            <a href="tel:+919400905954" style={{ color: '#007bff', textDecoration: 'none' }} target='_blank' rel='noopener noreferrer'>
+
+                                                📞 Call us at +91 9400905954
+                                            </a>
+                                        </p>
+                                        <br />
+                                        <p style={{ marginBottom: '0px' }}>
+                                            <a href='mailto:info@befirsthrm.com' style={{ color: '#007bff', textDecoration: 'none' }} target='_blank' rel='noopener noreferrer'>
+                                                📧 Email: info@befirsthrm.com
+                                            </a>
+                                        </p>
+                                        <br />
+                                        <p style={{ marginBottom: '0px' }}>
+                                            <a href='https://www.befirsthrm.com' style={{ color: '#007bff', textDecoration: 'none' }} target='_blank' rel='noopener noreferrer'>
+
+                                                🌐 Visit: www.befirsthrm.com
+                                            </a>
+
+                                        </p>
                                     </blockquote>
                                 </div>
 

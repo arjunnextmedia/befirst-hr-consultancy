@@ -15,10 +15,16 @@ const BlogSingle2 = (props) => {
         e.preventDefault();
     };
 
+        const bulletList = {
+        paddingLeft: "20px",
+        marginBottom: "15px",
+        listStyleType: "disc",
+    };
+
     return (
         <>
           <Navbar2/>
-                    <PageTitle pageTitle={'Blog Details'} pagesub1={'Blogs'} pagesub2={'Blog Details'}/> 
+            <PageTitle pageTitle={'Article Details'} pagesub1={'Articles'} pagesub2={'Article Details'} />
         <section className="wpo-blog-single-section section-padding">
             <div className="container">
                 <div className="row">
@@ -41,18 +47,18 @@ const BlogSingle2 = (props) => {
                                 <p>
                                     Recruitment can be one of the most time-consuming and costly processes for any business. 
                                     For SMEs in Kerala, where every resource counts, finding the right talent quickly can mean 
-                                    the difference between growth and stagnation. This is where recruitment outsourcing steps in — 
+                                    the difference between growth and stagnation. This is where <strong>recruitment outsourcing</strong> steps in — 
                                     a smart, cost-effective solution to hiring challenges.
                                 </p>
                                 <p>
-                                    In this article, we’ll explore the benefits of recruitment outsourcing in Kerala and how it 
+                                    In this article, we’ll explore the <strong>benefits of recruitment outsourcing in Kerala</strong> and how it 
                                     can help your business save time, reduce costs, and attract top talent.
                                 </p>
 
                                 <h3>1. Reduced Hiring Costs</h3>
                                 <p>
                                     Hiring in-house recruitment teams or conducting lengthy hiring processes can drain your budget. 
-                                    With recruitment outsourcing, you eliminate expenses like job portal fees, advertising costs, and 
+                                    With r<strong>recruitment outsourcing</strong>, you eliminate expenses like job portal fees, advertising costs, and 
                                     internal recruiter salaries. Instead, you pay for a streamlined, expert-led process that delivers 
                                     better candidates faster.
                                 </p>
@@ -98,13 +104,14 @@ const BlogSingle2 = (props) => {
                                     business time and money.
                                 </p>
 
-                                <blockquote>
+                                {/* <blockquote> */}
+                                <h3>Real Example – How SMEs in Kerala Benefit</h3>
                                     <p>
-                                        “At Befirst HR & Management Consultancy, we recently helped a manufacturing SME in Calicut fill 
-                                        12 critical positions in just 25 days. The business saved over 40% in recruitment costs compared 
+                                        At <strong> Befirst HR & Management Consultancy, </strong> we recently helped a manufacturing SME in Calicut fill 
+                                        12 critical positions in just 25 days. The business saved <strong>over 40% </strong>in recruitment costs compared 
                                         to their in-house efforts and avoided 3 months of potential downtime.”
                                     </p>
-                                </blockquote>
+                                {/* </blockquote> */}
 
                                 <div className="gallery">
                                     <div>
@@ -117,13 +124,42 @@ const BlogSingle2 = (props) => {
 
                                 <h3>Conclusion</h3>
                                 <p>
-                                    The benefits of recruitment outsourcing in Kerala go beyond saving money — it’s about smarter hiring, 
-                                    reduced risks, and long-term business growth. If you’re struggling to find the right talent, let 
+                                    The <strong> benefits of recruitment outsourcing in Kerala</strong>  go beyond saving money — it’s about smarter hiring, 
+                                    reduced risks, and long-term business growth.
+                                    <p>
+If you’re struggling to find the right talent, let 
                                     <strong> Befirst HR & Management Consultancy</strong> be your recruitment partner. We’ll help you attract, 
                                     hire, and retain the best people — so you can focus on running and growing your business.
+                                    </p> 
                                 </p>
 
+                                 <blockquote>
                                 <p><strong>📞 Contact us today</strong> to discuss how recruitment outsourcing can transform your hiring process.</p>
+                                        {/* <h3>
+                                            Ready to build your employer brand in Kerala?
+                                        </h3>  */}
+                                        <br />
+                                        <p style={{ marginBottom: '0px' }}>
+                                            <a href="tel:+919400905954" style={{ color: '#007bff', textDecoration: 'none' }} target='_blank' rel='noopener noreferrer'>
+
+                                                📞 Call us at +91 9400905954
+                                            </a>
+                                        </p>
+                                        <br />
+                                        <p style={{ marginBottom: '0px' }}>
+                                            <a href='mailto:info@befirsthrm.com' style={{ color: '#007bff', textDecoration: 'none' }} target='_blank' rel='noopener noreferrer'>
+                                                📧 Email: info@befirsthrm.com
+                                            </a>
+                                        </p>
+                                        <br />
+                                        {/* <p style={{ marginBottom: '0px' }}>
+                                            <a href='https://www.befirsthrm.com' style={{ color: '#007bff', textDecoration: 'none' }} target='_blank' rel='noopener noreferrer'>
+
+                                                🌐 Visit: www.befirsthrm.com
+                                            </a>
+
+                                        </p> */}
+                                    </blockquote>
                             </div>
 
                             {/* <div className="tag-share clearfix">

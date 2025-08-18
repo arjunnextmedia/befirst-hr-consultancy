@@ -1,120 +1,55 @@
 import React from 'react';
 import { icons, values } from '../data/dummyCoreValues';
 
-
 const CoreValues = () => {
-    // Define animated shapes for the background - More elements with theme colors
+    // Reduced and more professional background shapes
     const shapes = [
         { 
-            background: "linear-gradient(135deg, #2340ce, #1e40af)", 
-            size: 90, 
-            top: "6%", 
-            left: "2%", 
+            background: "#D9EAFE", 
+            size: 70, 
+            top: "10%", 
+            left: "5%", 
             delay: "0s",
             shape: "circle"
         },
         { 
-            background: "linear-gradient(135deg, #64748b, #475569)", 
-            size: 60, 
-            top: "78%", 
-            left: "92%", 
+            background: "#E0E7FF", 
+            size: 50, 
+            top: "80%", 
+            left: "90%", 
             delay: "2s",
-            shape: "pentagon"
+            shape: "circle"
         },
         { 
-            background: "linear-gradient(135deg, #1e40af, #3b82f6)", 
-            size: 40, 
-            top: "15%", 
-            left: "96%", 
+            background: "#DBEAFE", 
+            size: 35, 
+            top: "25%", 
+            left: "95%", 
             delay: "1.5s",
             shape: "circle"
         },
         { 
-            background: "linear-gradient(135deg, #475569, #2340ce)", 
-            size: 70, 
-            top: "88%", 
-            left: "4%", 
+            background: "#D9EAFE", 
+            size: 55, 
+            top: "85%", 
+            left: "8%", 
             delay: "3s",
-            shape: "pentagon"
+            shape: "circle"
         },
         { 
-            background: "linear-gradient(135deg, #3b82f6, #60a5fa)", 
-            size: 28, 
-            top: "3%", 
-            left: "45%", 
+            background: "#E0E7FF", 
+            size: 25, 
+            top: "5%", 
+            left: "50%", 
             delay: "1s",
             shape: "circle"
         },
         { 
-            background: "linear-gradient(135deg, #1e293b, #334155)", 
-            size: 50, 
-            top: "42%", 
-            left: "1%", 
-            delay: "2.5s",
-            shape: "circle"
-        },
-        { 
-            background: "linear-gradient(135deg, #60a5fa, #93c5fd)", 
-            size: 35, 
-            top: "32%", 
-            left: "98%", 
-            delay: "0.5s",
-            shape: "circle"
-        },
-        { 
-            background: "linear-gradient(135deg, #334155, #475569)", 
-            size: 65, 
-            top: "92%", 
-            left: "55%", 
-            delay: "3.5s",
-            shape: "circle"
-        },
-        { 
-            background: "linear-gradient(135deg, #2340ce, #60a5fa)", 
-            size: 22, 
-            top: "8%", 
-            left: "75%", 
-            delay: "4s",
-            shape: "circle"
-        },
-        { 
-            background: "linear-gradient(135deg, #1e40af, #1e293b)", 
-            size: 45, 
-            top: "25%", 
-            left: "3%", 
-            delay: "1.8s",
-            shape: "circle"
-        },
-        { 
-            background: "linear-gradient(135deg, #93c5fd, #dbeafe)", 
-            size: 30, 
-            top: "58%", 
-            left: "96%", 
-            delay: "2.8s",
-            shape: "circle"
-        },
-        { 
-            background: "linear-gradient(135deg, #64748b, #93c5fd)", 
-            size: 38, 
-            top: "12%", 
-            left: "25%", 
-            delay: "3.2s",
-            shape: "circle"
-        },
-        { 
-            background: "linear-gradient(135deg, #475569, #60a5fa)", 
-            size: 26, 
-            top: "85%", 
-            left: "35%", 
-            delay: "1.2s",
-            shape: "circle"
-        },
-        { 
-            background: "linear-gradient(135deg, #334155, #2340ce)", 
-            size: 42, 
-            top: "65%", 
+            background: "#DBEAFE", 
+            size: 40, 
+            top: "45%", 
             left: "2%", 
-            delay: "4.2s",
+            delay: "2.5s",
             shape: "circle"
         }
     ];
@@ -126,23 +61,12 @@ const CoreValues = () => {
             width: `${size}px`,
             height: `${size}px`,
             opacity: 0.3,
-            animation: `floatShape 6s ease-in-out infinite`,
+            animation: `floatShape 8s ease-in-out infinite`,
             zIndex: 1,
-            filter: "blur(0.5px)"
+            borderRadius: "50%"
         };
 
-        switch(shape.shape) {
-            case 'pentagon':
-                return {
-                    ...baseStyles,
-                    clipPath: "polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)"
-                };
-            default: // circle
-                return {
-                    ...baseStyles,
-                    borderRadius: "50%"
-                };
-        }
+        return baseStyles;
     };
 
     return (
@@ -200,19 +124,19 @@ const CoreValues = () => {
                 </div>
                 {/* Styles */}
                 <style jsx>{`
-          /* Animation keyframes for shapes - Movement only, no rotation */
+          /* Animation keyframes for shapes - Subtle movement only */
           @keyframes floatShape {
             0%, 100% { 
               transform: translateY(0) translateX(0) scale(1);
             }
             25% { 
-              transform: translateY(-30px) translateX(15px) scale(1.05);
+              transform: translateY(-20px) translateX(10px) scale(1.02);
             }
             50% { 
-              transform: translateY(-45px) translateX(-20px) scale(0.95);
+              transform: translateY(-30px) translateX(-15px) scale(0.98);
             }
             75% { 
-              transform: translateY(-25px) translateX(25px) scale(1.08);
+              transform: translateY(-15px) translateX(18px) scale(1.01);
             }
           }
 
@@ -223,8 +147,8 @@ const CoreValues = () => {
             overflow: hidden;
           }
           .badge-title {
-            background: rgba(35, 64, 206, 0.08);
-            color: #2340ce;
+            background: rgba(59, 130, 246, 0.08);
+            color: #1e40af;
             font-size: 0.8rem;
             font-weight: 600;
             letter-spacing: 1px;
@@ -250,7 +174,7 @@ const CoreValues = () => {
           .core-card {
             background: #fff;
             border-radius: 1.25rem;
-            box-shadow: 0 4px 32px rgba(35, 64, 206, 0.07), 0 1.5px 6px rgba(0,0,0,0.03);
+            box-shadow: 0 4px 32px rgba(59, 130, 246, 0.07), 0 1.5px 6px rgba(0,0,0,0.03);
             padding: 2.5rem 2rem 2rem 2rem;
             display: flex;
             flex-direction: column;
@@ -268,25 +192,25 @@ const CoreValues = () => {
           }
           .core-card:focus,
           .core-card:hover {
-            box-shadow: 0 12px 48px rgba(35, 64, 206, 0.13), 0 2px 8px rgba(0,0,0,0.06);
+            box-shadow: 0 12px 48px rgba(59, 130, 246, 0.13), 0 2px 8px rgba(0,0,0,0.06);
             transform: translateY(-8px) scale(1.025);
-            background: linear-gradient(120deg, #f5f8ff 0%, #fafdff 100%);
+            background: linear-gradient(120deg, #f8fafc 0%, #f1f5f9 100%);
           }
           .icon-wrap {
             margin-bottom: 1.5rem;
-            background: linear-gradient(135deg, rgba(35,64,206,0.07) 0%, rgba(35,64,206,0.13) 100%);
+            background: linear-gradient(135deg, rgba(59,130,246,0.08) 0%, rgba(59,130,246,0.14) 100%);
             border-radius: 1rem;
             width: 72px;
             height: 72px;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 2px 12px rgba(35,64,206,0.07);
+            box-shadow: 0 2px 12px rgba(59,130,246,0.08);
             transition: background 0.3s;
           }
           .core-card:hover .icon-wrap,
           .core-card:focus .icon-wrap {
-            background: linear-gradient(135deg, rgba(35,64,206,0.13) 0%, rgba(35,64,206,0.19) 100%);
+            background: linear-gradient(135deg, rgba(59,130,246,0.14) 0%, rgba(59,130,246,0.20) 100%);
           }
           .core-card-title {
             color: #1e293b;

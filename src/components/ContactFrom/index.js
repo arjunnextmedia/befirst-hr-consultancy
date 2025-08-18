@@ -69,7 +69,6 @@ class ContactForm extends Component {
     const { name, lastname, email, subject, notes } = this.state;
 
     try {
-      // ✅ Send to backend (store in DB + email)
       await axiosInstance.post("/enquiry", {
         name,
         lastname,
@@ -78,7 +77,6 @@ class ContactForm extends Component {
         notes,
       });
 
-      // ✅ Open WhatsApp
       const whatsappNumber = "9847634709";
       const message = formatWhatsAppMessage({
         name,
@@ -90,10 +88,8 @@ class ContactForm extends Component {
       const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
       window.open(whatsappUrl, "_blank");
 
-      // ✅ Success toast
       toast.success("Enquiry sent successfully!");
 
-      // ✅ Reset form
       this.setState({
         name: "",
         email: "",

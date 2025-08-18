@@ -195,7 +195,7 @@ const HRChatbot = () => {
                     <a href="mailto:info@befirsthr.com" className="text-primary fw-semibold">
                       info@befirsthr.com
                     </a>.
-                    We’ll get back to you as soon as possible.
+                    We'll get back to you as soon as possible.
                   </p>
                 </div>
 
@@ -220,13 +220,13 @@ const HRChatbot = () => {
           width: 60px;
           height: 60px;
           border-radius: 50%;
-          background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+          background: linear-gradient(135deg, #2F4EE6 0%, #1E40AF 100%);
           border: none;
           color: white;
           display: flex;
           align-items: center;
           justify-content: center;
-          box-shadow: 0 4px 20px rgba(79, 70, 229, 0.4);
+          box-shadow: 0 4px 20px rgba(47, 78, 230, 0.4);
           transition: all 0.3s ease;
           position: relative;
           overflow: hidden;
@@ -234,8 +234,8 @@ const HRChatbot = () => {
 
         .chatbot-toggle-btn:hover {
           transform: scale(1.05);
-          box-shadow: 0 6px 25px rgba(79, 70, 229, 0.6);
-          background: linear-gradient(135deg, #4338ca 0%, #6d28d9 100%);
+          box-shadow: 0 6px 25px rgba(47, 78, 230, 0.6);
+          background: linear-gradient(135deg, #1D4ED8 0%, #1E40AF 100%);
         }
 
         .chatbot-toggle-btn.open {
@@ -264,7 +264,7 @@ const HRChatbot = () => {
         }
 
         .chatbot-header {
-          background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+          background: linear-gradient(135deg, #2F4EE6 0%, #1E40AF 100%);
           color: white;
           padding: 16px 20px;
           display: flex;
@@ -323,7 +323,7 @@ const HRChatbot = () => {
         }
 
         .message-bubble.user {
-          background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+          background: linear-gradient(135deg, #2F4EE6 0%, #1E40AF 100%);
           border-radius: 18px 18px 4px 18px;
           color: white;
           margin-left: auto;
@@ -353,8 +353,8 @@ const HRChatbot = () => {
 
         .quick-question-btn {
           background: white;
-          border: 2px solid #4f46e5;
-          color: #4f46e5;
+          border: 2px solid #2F4EE6;
+          color: #2F4EE6;
           border-radius: 12px;
           padding: 10px 16px;
           margin-bottom: 8px;
@@ -367,10 +367,10 @@ const HRChatbot = () => {
         }
 
         .quick-question-btn:hover {
-          background: #4f46e5;
+          background: #2F4EE6;
           color: white;
           transform: translateY(-1px);
-          box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
+          box-shadow: 0 4px 12px rgba(47, 78, 230, 0.2);
         }
 
         .contact-section {
@@ -401,11 +401,11 @@ const HRChatbot = () => {
         }
 
         .contact-btn:hover {
-          background: #4f46e5;
-          border-color: #4f46e5;
+          background: #2F4EE6;
+          border-color: #2F4EE6;
           color: white;
           transform: translateY(-1px);
-          box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
+          box-shadow: 0 4px 12px rgba(47, 78, 230, 0.2);
           text-decoration: none;
         }
 

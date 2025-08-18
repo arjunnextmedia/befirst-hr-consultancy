@@ -2,7 +2,7 @@ import blog1 from '../../images/blog/blog-868x514-1.jpg';
 import blog2 from '../../images/blog/blog-868x514-2.jpg';
 import blog3 from '../../images/blog/blog-868x514-3.jpg';
 import blog4 from '../../images/blog/blog-868x514-4.jpg';
-import blog5 from '../../images/blog/blog-868x514-3.jpg';
+import blog5 from '../../images/blog/blog-868x514-5.jpg';
 
 
 export const blogs = [

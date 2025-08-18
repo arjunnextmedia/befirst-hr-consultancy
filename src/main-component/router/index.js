@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, } from "react-router-dom";
+import { Routes, Route, } from "react-router-dom";
 
 import Homepage from '../HomePage'
 import Homepage2 from '../HomePage2'
@@ -8,10 +8,10 @@ import AboutPage from '../AboutPage'
 import ServicePage from '../ServicePage'
 import ServicePageS2 from '../ServicePageS2'
 import ServiceSinglePage from '../ServiceSinglePage'
-import ProjectPage from '../ProjectPage'
-import ProjectPageS2 from '../ProjectPageS2'
-import ProjectSinglePage from '../ProjectSinglePage'
-import PricingPage from '../PricingPage'
+// import ProjectPage from '../ProjectPage'
+// import ProjectPageS2 from '../ProjectPageS2'
+// import ProjectSinglePage from '../ProjectSinglePage'
+// import PricingPage from '../PricingPage'
 import TestimonialPage from '../TestimonialPage'
 import BlogPage from '../BlogPage'
 import BlogPageLeft from '../BlogPageLeft'
@@ -49,6 +49,11 @@ const AllRoute = () => {
           <Route path='/service' element={<ServicePage/>} />
           <Route path='/service-s2' element={<ServicePageS2/>} />
           <Route path='/service-single/:id' element={<ServiceSinglePage />} />
+          {/* <Route path='/service-single/' element={<ServiceSinglePage />} />
+          <Route path='/service-single/' element={<ServiceSinglePage />} />
+          <Route path='/service-single/' element={<ServiceSinglePage />} />
+          <Route path='/service-single/' element={<ServiceSinglePage />} />
+          <Route path='/service-single/' element={<ServiceSinglePage />} /> */}
           {/* <Route path='/project' element={<ProjectPage />} />
           <Route path='/project-s2' element={<ProjectPageS2 />} />
           <Route path='/project-single' element={<ProjectSinglePage />} />

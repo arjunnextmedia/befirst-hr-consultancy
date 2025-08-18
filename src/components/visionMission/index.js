@@ -25,7 +25,8 @@ const VisionMission = () => {
   };
 
   const highlightTextStyle = {
-    background: "linear-gradient(90deg, #3b82f6, #10b981)",
+    background: "linear-gradient(90deg, #3b82f6, #2744D5)",
+    color:"#2744D5",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
   };
@@ -45,20 +46,20 @@ const VisionMission = () => {
   const cardStyle = (isHovered) => ({
     ...cardBaseStyle,
     background: isHovered
-      ? "linear-gradient(135deg, #86efac, #93c5fd)"
-      : "linear-gradient(135deg, #93c5fd, #86efac)",
+      ? "linear-gradient(135deg, #91CAF2, #BFDBFE)"
+      : "linear-gradient(135deg, #BFDBFE, #91CAF2)",
     transform: isHovered
       ? "translateY(-8px) scale(1.02)"
       : "translateY(0) scale(1)",
     boxShadow: isHovered
-      ? "0 15px 30px rgba(0,0,0,0.15)"
-      : "0 8px 25px rgba(0,0,0,0.08)",
+      ? "0 15px 30px rgba(59, 130, 246, 0.15)"
+      : "0 8px 25px rgba(59, 130, 246, 0.08)",
   });
 
   const iconStyle = {
     fontSize: "2.8rem",
     marginBottom: "16px",
-    color: "#2563eb",
+    color: "#1e40af",
   };
 
   const paragraphStyle = {
@@ -68,16 +69,17 @@ const VisionMission = () => {
     fontSize: "1rem",
   };
 
+  // Reduced and more subtle background shapes
   const shapes = [
-    { background: "#3b82f6", size: 80, top: "15%", left: "10%", delay: "0s" },
-    { background: "#10b981", size: 60, top: "65%", left: "85%", delay: "2s" },
-    { background: "#1e40af", size: 50, top: "40%", left: "50%", delay: "4s" },
-    { background: "#0d9488", size: 70, top: "80%", left: "20%", delay: "1s" },
+    { background: "#D9EAFE", size: 60, top: "20%", left: "8%", delay: "0s" },
+    { background: "#E0E7FF", size: 45, top: "70%", left: "88%", delay: "2s" },
+    { background: "#DBEAFE", size: 35, top: "45%", left: "5%", delay: "3s" },
+    { background: "#D9EAFE", size: 50, top: "15%", left: "90%", delay: "1s" },
   ];
 
   return (
     <section style={sectionStyle}>
-      {/* Floating colorful shapes */}
+      {/* Subtle floating shapes */}
       {shapes.map((shape, index) => (
         <div
           key={index}
@@ -89,8 +91,8 @@ const VisionMission = () => {
             borderRadius: "50%",
             top: shape.top,
             left: shape.left,
-            opacity: 0.8,
-            animation: `floatShape 6s ease-in-out infinite`,
+            opacity: 0.4,
+            animation: `floatShape 8s ease-in-out infinite`,
             animationDelay: shape.delay,
             zIndex: 1,
           }}
@@ -102,7 +104,7 @@ const VisionMission = () => {
         {`
           @keyframes floatShape {
             0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
+            50% { transform: translateY(-15px); }
           }
 
           @keyframes dropBounce {
@@ -152,7 +154,7 @@ const VisionMission = () => {
               <i className="bi bi-eye" style={iconStyle}></i>
               <h4 style={{ fontWeight: "700", color: "#1f2937" }}>Our Vision</h4>
               <p style={paragraphStyle}>
-                To become Kerala’s most trusted partner in human capital
+                To become Kerala's most trusted partner in human capital
                 development and management transformation, setting new
                 standards in professional excellence and business empowerment.
               </p>

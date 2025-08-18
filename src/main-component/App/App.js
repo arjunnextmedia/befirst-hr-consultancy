@@ -8,6 +8,7 @@ import Scrollbar from '../../components/scrollbar';
 import Loader from '../../components/Loader';
 import '../../components/Loader/loader.css';
 import RouteLoaderWrapper from '../../app/RouteLoaderWrapper';
+import ConsentModal from '../../components/consentModal';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -32,6 +33,7 @@ const App = () => {
       <ToastContainer />
       <HRChatbot />
       <Scrollbar />
+      <ConsentModal/>
     </div>
   );
 };

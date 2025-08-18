@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import BlogSidebar from '../BlogSidebar/blog1';
+// import BlogSidebar from '../BlogSidebar/blog1';
 import { blogs } from '../data/dummyBlogs';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import AllBlogSidebar from '../BlogSidebar/Allblog';
