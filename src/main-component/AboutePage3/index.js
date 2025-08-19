@@ -14,9 +14,7 @@ const VisionAndMission = () => {
             <PageTitle pageTitle={'Our Mission & Values'} pagesub={'Our Mission & Values'} />
             <VisionMission />
             <CoreValues />
-
             <FunFact fnClass={'section-padding'} />
-
             <Footer />
             <Scrollbar />
         </>

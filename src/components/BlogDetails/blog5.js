@@ -4,8 +4,8 @@ import BlogSidebar from '../BlogSidebar/blog1';
 
 import blogMain from '../../images/blog/blog-868x514-5.jpg';
 import authorImg from '../../images/blog-details/author.jpg';
-import gl1 from '../../images/blog/img-3.jpg';
-import gl2 from '../../images/blog/img-2.jpg';
+import gl1 from '../../images/blog/blog5-sub-1.jpg';
+import gl2 from '../../images/blog/blog5-sub2.jpg';
 import Footer from '../footer';
 import Navbar2 from '../Navbar2';
 import PageTitle from '../pageTitles/Blog-details-pagetitle';

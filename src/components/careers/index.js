@@ -111,7 +111,7 @@ const Careers = () => {
                                 Shape the Future of HR in Kerala and India
                             </h2>
                             <p className="lead mb-4" style={{ color: '#4a5568', fontSize: '1.1rem' }}>
-                                At <span className="fw-bold" style={{ color: '#4f46e5' }}>Befirst HR and Management Consultancy</span>, we believe that great businesses are built by great people.
+                                At <span className="fw-bold" style={{ color: '#3454F1' }}>Befirst HR and Management Consultancy</span>, we believe that great businesses are built by great people.
                                 We are on a mission to empower SMEs and growing companies with innovative HR solutions that help them attract, develop, and retain top talent.
                             </p>
                             <p className="fs-5" style={{ color: '#718096' }}>
@@ -175,7 +175,7 @@ const Careers = () => {
                                     >
                                         <div className="row align-items-center">
                                             <div className="col-lg-8">
-                                                <h4 className="mb-2 fw-bold" style={{ color: '#4f46e5' }}>{job.title}</h4>
+                                                <h4 className="mb-2 fw-bold" style={{ color: '#3454F1' }}>{job.title}</h4>
                                                 <div className="d-flex flex-wrap gap-3" style={{ color: '#4a5568' }}>
                                                     <div className="d-flex align-items-center">
                                                         <MapPin size={16} className="me-2" />
@@ -200,17 +200,17 @@ const Careers = () => {
                                                     className="btn me-3 px-4 py-2"
                                                     style={{
                                                         backgroundColor: 'transparent',
-                                                        border: '2px solid #4f46e5',
-                                                        color: '#4f46e5',
+                                                        border: '2px solid #3454F1',
+                                                        color: '#3454F1',
                                                         fontWeight: '600'
                                                     }}
                                                     onMouseOver={(e) => {
-                                                        e.target.style.backgroundColor = '#4f46e5';
+                                                        e.target.style.backgroundColor = '#3454F1';
                                                         e.target.style.color = 'white';
                                                     }}
                                                     onMouseOut={(e) => {
                                                         e.target.style.backgroundColor = 'transparent';
-                                                        e.target.style.color = '#4f46e5';
+                                                        e.target.style.color = '#3454F1';
                                                     }}
                                                 >
                                                     Apply Now
@@ -231,11 +231,11 @@ const Careers = () => {
                                         <div className="card-body p-4" style={{ backgroundColor: '#f8f9fa', borderTop: '1px solid #e2e8f0' }}>
                                             <div className="row">
                                                 <div className="col-md-6">
-                                                    <h6 className="fw-bold mb-3" style={{ color: '#4f46e5' }}>Responsibilities</h6>
+                                                    <h6 className="fw-bold mb-3" style={{ color: '#3454F1' }}>Responsibilities</h6>
                                                     <ul className="list-unstyled">
                                                         {job.responsibilities.map((resp, index) => (
                                                             <li key={index} className="mb-2 d-flex">
-                                                                <ChevronRight size={16} className="mt-1 me-2 flex-shrink-0" style={{ color: '#4f46e5' }} />
+                                                                <ChevronRight size={16} className="mt-1 me-2 flex-shrink-0" style={{ color: '#3454F1' }} />
                                                                 <span style={{ color: '#4a5568' }}>{resp}</span>
                                                             </li>
                                                         ))}
@@ -257,16 +257,16 @@ const Careers = () => {
                                                 <button
                                                     className="btn btn-lg px-4 py-2"
                                                     style={{
-                                                        backgroundColor: '#4f46e5',
+                                                        backgroundColor: '#3454F1',
                                                         border: 'none',
                                                         color: 'white',
                                                         fontWeight: '600'
                                                     }}
                                                     onMouseOver={(e) => {
-                                                        e.target.style.backgroundColor = '#4338ca';
+                                                        e.target.style.backgroundColor = '#2c47d1';
                                                     }}
                                                     onMouseOut={(e) => {
-                                                        e.target.style.backgroundColor = '#4f46e5';
+                                                        e.target.style.backgroundColor = '#3454F1';
                                                     }}
                                                 >
                                                     <Mail size={20} className="me-2" />
@@ -294,11 +294,9 @@ const Careers = () => {
                                         <div className="col-md-8">
                                             <h5 className="fw-bold mb-3" style={{ color: '#1a202c' }}>Ready to Join Our Team?</h5>
                                             <p className="mb-3" style={{ color: '#4a5568' }}>
-                                                Interested candidates can send their CVs along with a cover letter to
-                                                <span className="fw-bold" style={{ color: '#4f46e5' }}>
-                                                    <a href="mailto:careers@befirsthr.com " target='_blank' rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
-
-                                                        careers@befirsthr.com
+                                                Interested candidates can send their CVs along with a cover letter to 
+                                                <span className="fw-bold" style={{ color: '#3454F1' }}>
+                                                    <a href="mailto:careers@befirsthr.com " target='_blank' rel="noopener noreferrer" style={{ textDecoration: 'none' }}> careers@befirsthr.com
                                                     </a>
                                                 </span> or use our online application form.
                                             </p>
@@ -310,16 +308,16 @@ const Careers = () => {
                                             <button
                                                 className="btn btn-lg px-4 mb-3 w-100"
                                                 style={{
-                                                    backgroundColor: '#4f46e5',
+                                                    backgroundColor: '#3454F1',
                                                     border: 'none',
                                                     color: 'white',
                                                     fontWeight: '600'
                                                 }}
                                                 onMouseOver={(e) => {
-                                                    e.target.style.backgroundColor = '#4338ca';
+                                                    e.target.style.backgroundColor = '#2c47d1';
                                                 }}
                                                 onMouseOut={(e) => {
-                                                    e.target.style.backgroundColor = '#4f46e5';
+                                                    e.target.style.backgroundColor = '#3454F1';
                                                 }}
                                             >
                                                 <ExternalLink size={20} className="me-2" />
@@ -331,17 +329,17 @@ const Careers = () => {
                                                     className="btn w-100"
                                                     style={{
                                                         backgroundColor: 'transparent',
-                                                        border: '2px solid #4f46e5',
-                                                        color: '#4f46e5',
+                                                        border: '2px solid #3454F1',
+                                                        color: '#3454F1',
                                                         fontWeight: '600'
                                                     }}
                                                     onMouseOver={(e) => {
-                                                        e.target.style.backgroundColor = '#4f46e5';
+                                                        e.target.style.backgroundColor = '#3454F1';
                                                         e.target.style.color = 'white';
                                                     }}
                                                     onMouseOut={(e) => {
                                                         e.target.style.backgroundColor = 'transparent';
-                                                        e.target.style.color = '#4f46e5';
+                                                        e.target.style.color = '#3454F1';
                                                     }}
                                                 >
                                                     <Mail size={20} className="me-2" />
@@ -376,7 +374,7 @@ const Careers = () => {
                 />
                 <div className="container position-relative">
                     <div className="row align-items-center">
-                        <div className="col-lg-8">
+                        <div className="col-lg-12">
                             <h2 className="display-5 fw-bold mb-3" style={{ color: 'white' }}>
                                 Join Us and Be Part of Something Bigger!
                             </h2>
@@ -385,7 +383,7 @@ const Careers = () => {
                                 it's a journey to create meaningful impact through people and business transformation.
                             </p>
                         </div>
-                        <div className="col-lg-4 text-end">
+                        {/* <div className="col-lg-4 text-end">
                             <button
                                 className="btn btn-lg px-4"
                                 style={{
@@ -404,41 +402,41 @@ const Careers = () => {
                                 <Users size={20} className="me-2" />
                                 Start Your Journey
                             </button>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>
 
             <style jsx>{`
-        /* Brand Colors matching your website */
+        /* Brand Colors updated to #3454F1 */
         .brand-primary {
-          color: #4f46e5 !important;
+          color: #3454F1 !important;
         }
         
         .btn-brand {
-          background-color: #4f46e5;
-          border-color: #4f46e5;
+          background-color: #3454F1;
+          border-color: #3454F1;
           color: white;
           transition: all 0.3s ease;
         }
         
         .btn-brand:hover {
-          background-color: #4338ca;
-          border-color: #4338ca;
+          background-color: #2c47d1;
+          border-color: #2c47d1;
           color: white;
           transform: translateY(-2px);
         }
         
         .btn-brand-outline {
-          border: 2px solid #4f46e5;
-          color: #4f46e5;
+          border: 2px solid #3454F1;
+          color: #3454F1;
           background-color: transparent;
           transition: all 0.3s ease;
         }
         
         .btn-brand-outline:hover {
-          background-color: #4f46e5;
-          border-color: #4f46e5;
+          background-color: #3454F1;
+          border-color: #3454F1;
           color: white;
           transform: translateY(-2px);
         }
@@ -449,7 +447,7 @@ const Careers = () => {
         }
         .hover-lift:hover {
           transform: translateY(-5px);
-          box-shadow: 0 10px 25px rgba(79, 70, 229, 0.15) !important;
+          box-shadow: 0 10px 25px rgba(52, 84, 241, 0.15) !important;
         }
         
         .job-card {
@@ -457,7 +455,7 @@ const Careers = () => {
         }
         
         .job-card:hover {
-          box-shadow: 0 8px 25px rgba(79, 70, 229, 0.1) !important;
+          box-shadow: 0 8px 25px rgba(52, 84, 241, 0.1) !important;
         }
         
         .cursor-pointer {
@@ -478,8 +476,8 @@ const Careers = () => {
         
         /* Email CV Button Hover Effect */
         .email-cv-btn:hover {
-          background-color: #4f46e5 !important;
-          border-color: #4f46e5 !important;
+          background-color: #3454F1 !important;
+          border-color: #3454F1 !important;
           color: white !important;
         }
         
