@@ -34,6 +34,7 @@ import PrivacyPolicyPage from '../PrivacyPolicy';
 import TermsOfUsePage from '../TermsOfUse';
 import VisionAndMission from '../AboutePage3';
 import FoundersVisionPage from '../FoundersVisionPage';
+import CareersFormPage from '../careersFormPage';
 
 
 const AllRoute = () => {
@@ -77,6 +78,7 @@ const AllRoute = () => {
           <Route path='/terms' element={<TermsOfUsePage />} />
           <Route path='/about2' element={<FoundersVisionPage />} />
           <Route path='/about3' element={<VisionAndMission />} />
+          <Route path='/careers/careers-form' element={<CareersFormPage />} />
 
 
 

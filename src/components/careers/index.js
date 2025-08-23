@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { Users, TrendingUp, Heart, Clock, DollarSign, Award, MapPin, Calendar, Mail, ExternalLink, ChevronRight, Building, Briefcase } from 'lucide-react';
 import { jobOpenings } from '../data/dummyCareers';
+import { useNavigate } from 'react-router-dom';
+import ProfessionalBanner from './banner';
 
 const Careers = () => {
     const [activeJob, setActiveJob] = useState(null);
-
+    const navigate = useNavigate();
     const benefits = [
         {
             icon: <TrendingUp className="brand-primary" size={24} />,
@@ -212,9 +214,11 @@ const Careers = () => {
                                                         e.target.style.backgroundColor = 'transparent';
                                                         e.target.style.color = '#3454F1';
                                                     }}
+                                                    onClick={() => window.open('/careers/careers-form', '_blank', 'noopener,noreferrer')}
                                                 >
                                                     Apply Now
                                                 </button>
+
                                                 <ChevronRight
                                                     size={20}
                                                     style={{
@@ -268,6 +272,8 @@ const Careers = () => {
                                                     onMouseOut={(e) => {
                                                         e.target.style.backgroundColor = '#3454F1';
                                                     }}
+                                                    onClick={() => window.open('/careers/careers-form', '_blank', 'noopener,noreferrer')}
+
                                                 >
                                                     <Mail size={20} className="me-2" />
                                                     Apply for this Position
@@ -294,7 +300,7 @@ const Careers = () => {
                                         <div className="col-md-8">
                                             <h5 className="fw-bold mb-3" style={{ color: '#1a202c' }}>Ready to Join Our Team?</h5>
                                             <p className="mb-3" style={{ color: '#4a5568' }}>
-                                                Interested candidates can send their CVs along with a cover letter to 
+                                                Interested candidates can send their CVs along with a cover letter to
                                                 <span className="fw-bold" style={{ color: '#3454F1' }}>
                                                     <a href="mailto:careers@befirsthr.com " target='_blank' rel="noopener noreferrer" style={{ textDecoration: 'none' }}> careers@befirsthr.com
                                                     </a>
@@ -319,6 +325,7 @@ const Careers = () => {
                                                 onMouseOut={(e) => {
                                                     e.target.style.backgroundColor = '#3454F1';
                                                 }}
+                                                    onClick={() => window.open('/careers/careers-form', '_blank', 'noopener,noreferrer')}
                                             >
                                                 <ExternalLink size={20} className="me-2" />
                                                 Apply Online
@@ -356,56 +363,7 @@ const Careers = () => {
             </section>
 
             {/* Call to Action Section */}
-            <section
-                className="py-5 position-relative"
-                style={{
-                    background: 'linear-gradient(135deg, #1a202c 0%, #2d3748 50%, #4a5568 100%)',
-                    color: 'white'
-                }}
-            >
-                <div
-                    className="position-absolute w-100 h-100"
-                    style={{
-                        top: 0,
-                        left: 0,
-                        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-                        opacity: 0.4
-                    }}
-                />
-                <div className="container position-relative">
-                    <div className="row align-items-center">
-                        <div className="col-lg-12">
-                            <h2 className="display-5 fw-bold mb-3" style={{ color: 'white' }}>
-                                Join Us and Be Part of Something Bigger!
-                            </h2>
-                            <p className="lead mb-0" style={{ color: '#cbd5e0' }}>
-                                At Befirst HR and Management Consultancy, your career is not just a job —
-                                it's a journey to create meaningful impact through people and business transformation.
-                            </p>
-                        </div>
-                        {/* <div className="col-lg-4 text-end">
-                            <button
-                                className="btn btn-lg px-4"
-                                style={{
-                                    backgroundColor: 'white',
-                                    border: 'none',
-                                    color: '#1a202c',
-                                    fontWeight: '600'
-                                }}
-                                onMouseOver={(e) => {
-                                    e.target.style.backgroundColor = '#f7fafc';
-                                }}
-                                onMouseOut={(e) => {
-                                    e.target.style.backgroundColor = 'white';
-                                }}
-                            >
-                                <Users size={20} className="me-2" />
-                                Start Your Journey
-                            </button>
-                        </div> */}
-                    </div>
-                </div>
-            </section>
+            <ProfessionalBanner/>
 
             <style jsx>{`
         /* Brand Colors updated to #3454F1 */

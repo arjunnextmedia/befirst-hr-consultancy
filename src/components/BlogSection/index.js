@@ -124,6 +124,7 @@ const BlogSlider = () => {
         .blog-title a {
           text-decoration: none;
           color: inherit;
+          font-size: 1.7rem;
         }
 
         .blog-date {

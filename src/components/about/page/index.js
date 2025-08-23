@@ -68,7 +68,7 @@ const AboutSection = (props) => {
 };
 
 const bulletItem = {
-  fontSize: "1.15rem",
+  fontSize: "20px",
   lineHeight: "1.8",
   textAlign: "start",
   color: "#495057",
@@ -112,7 +112,7 @@ const bulletItem = {
                                     color: '#2c3e50'
                                 }}>Building Stronger Businesses Through Smarter People Management</h2>
                                 <p style={{
-                                    fontSize: '1.1rem',
+                                    fontSize: '20px',
                                     lineHeight: '1.7',
                                     color: '#6c757d',
                                     marginBottom: '20px'
@@ -120,14 +120,14 @@ const bulletItem = {
                                     Leading HR consultancy in Calicut, Kerala, dedicated to helping SMEs across Kerala and India build, grow, and scale with the power of the right people.
                                 </p>
                                 <p style={{
-                                    fontSize: '1rem',
+                                    fontSize: '20px',
                                     lineHeight: '1.7',
                                     color: '#6c757d'
                                 }}>
                                     Befirst HR & Management Consultancy is a <strong> leading HR consultancy in Calicut, Kerala, </strong>  dedicated to helping <strong> SMEs in Kerala and India </strong>  build, grow, and scale with the power of the right people.
                                 </p>
                                 <p style={{
-                                    fontSize: '1rem',
+                                    fontSize: '20px',
                                     lineHeight: '1.7',
                                     color: '#6c757d'
                                 }}>
@@ -389,7 +389,7 @@ const bulletItem = {
                             {/* The Idea Behind Befirst HRM section */}
                              <div className="text-center" style={{ marginBottom: '40px' }}>
                                 <h3 style={{
-                                    fontSize: '2.2rem',
+                                    fontSize: '2.5rem',
                                     fontWeight: '600',
                                     color: '#2c3e50',
                                     marginBottom: '15px',
@@ -413,7 +413,7 @@ const bulletItem = {
                                         border: '1px solid #e3f2fd'
                                     }}>
                                         <p style={{
-                                            fontSize: '1.15rem',
+                                            fontSize: '20px',
                                             lineHeight: '1.8',
                                             textAlign: 'start',
                                             color: '#495057',
@@ -422,7 +422,7 @@ const bulletItem = {
                                             The concept of Befirst HR & Management Consultancy was born out of a clear gap in the market: while Kerala is home to thousands of ambitious entrepreneurs and fast-growing SMEs, <strong style={{ color: '#0062cc' }}>most struggle to find, manage, and retain the right talent.</strong>
                                         </p>
                                         <p style={{
-                                            fontSize: '1.15rem',
+                                            fontSize: '20px',
                                             lineHeight: '1.8',
                                             textAlign: 'start',
                                             color: '#495057',
@@ -437,7 +437,7 @@ const bulletItem = {
                             {/* 40 Years of Proven Business Expertise section */}
                             <div className="text-center" style={{ marginBottom: '40px' }}>
                                 <h3 style={{
-                                    fontSize: '2.2rem',
+                                    fontSize: '2.5rem',
                                     fontWeight: '600',
                                     color: '#2c3e50',
                                     marginBottom: '15px',
@@ -463,7 +463,7 @@ const bulletItem = {
                                         border: '1px solid #e3f2fd'
                                     }}>
                                         <p style={{
-                                            fontSize: '1.15rem',
+                                            fontSize: '20px',
                                             lineHeight: '1.8',
                                             textAlign: 'start',
                                             color: '#495057',
@@ -636,7 +636,7 @@ const bulletItem = {
                                 borderRadius: '2px'
                             }}></div>
                             <p style={{
-                                fontSize: '1.2rem',
+                                fontSize: '20px',
                                 lineHeight: '1.8',
                                 color: '#495057',
                                 maxWidth: '800px',
@@ -690,11 +690,12 @@ const bulletItem = {
                                                         justifyContent: 'center'
                                                     }}>{value.title}</h4>
                                                     <p style={{
-                                                        fontSize: '1rem',
+                                                        fontSize: '18px',
+                                                        marginBottom: '0px',
                                                         color: '#6c757d',
                                                         margin: '0',
                                                         textAlign: 'center',
-                                                        lineHeight: '1.7'
+                                                        lineHeight: '1.4'
                                                     }}>
                                                         {value.description}
                                                     </p>
@@ -706,7 +707,7 @@ const bulletItem = {
                                     <div style={{
                                         textAlign: 'center',
                                         padding: '30px 0 10px 0',
-                                        fontSize: '0.95rem',
+                                        fontSize: '18px',
                                         color: '#6c757d',
                                         fontStyle: 'italic',
                                         marginTop: '20px'
@@ -730,17 +731,18 @@ const bulletItem = {
                         }}>
                             <div className="text-center" style={{ marginBottom: '50px' }}>
                                 <h3 style={{
-                                    fontSize: '2.2rem',
+                                    fontSize: '2.5rem',
                                     fontWeight: '600',
                                     color: '#2c3e50',
                                     marginBottom: '15px'
                                 }}>The Impact We Create</h3>
-                                <div style={{
-                                    width: '60px',
-                                    height: '3px',
-                                    backgroundColor: '#fff',
-                                    margin: '0 auto'
-                                }}></div>
+                                   <div style={{
+                                width: '80px',
+                                height: '4px',
+                                backgroundColor: '#007bff',
+                                margin: '0 auto 25px auto',
+                                borderRadius: '2px'
+                            }}></div>
                             </div>
 
                             <div className="row">
@@ -779,7 +781,7 @@ const bulletItem = {
                     <div className="col-12">
                         <div className="text-center" style={{ marginBottom: '50px' }}>
                             <h3 style={{
-                                fontSize: '2.2rem',
+                                fontSize: '2.5rem',
                                 fontWeight: '600',
                                 color: '#2c3e50',
                                 marginBottom: '15px'
@@ -809,7 +811,7 @@ const bulletItem = {
                                             marginBottom: '15px'
                                         }}>{reason.title}</h5>
                                         <p style={{
-                                            fontSize: '1rem',
+                                            fontSize: '20px',
                                             lineHeight: '1.7',
                                             color: '#6c757d',
                                             margin: '0'

@@ -19,10 +19,22 @@ const HeaderTopbar = () => {
                         <div className="contact-info">
                             <ul>
                                 <li>Visit our social pages</li>
-                                <li><Link to="/"><i className="ti-facebook"></i></Link></li>
-                                <li><Link to="/"><i className="ti-twitter-alt"></i></Link></li>
-                                <li><Link to="/"><i className="ti-instagram"></i></Link></li>
-                                <li><Link to="/"><i className="ti-google"></i></Link></li>
+                                <li><a 
+                                href="/"
+                                 target='_blank' 
+                                    rel="noreferrer"
+                                ><i className="ti-facebook"></i></a></li>
+                                {/* <li><Link to="/"><i className="ti-twitter-alt"></i></Link></li> */}
+                                <li><a href="https://www.instagram.com/befirsthrm/"
+                                 target='_blank' 
+                                    rel="noreferrer"
+                                 ><i className="ti-instagram"></i>
+                                 </a></li>
+                                <li><a href="https://www.linkedin.com/showcase/befirsthrm/?viewAsMember=true"
+                                     target='_blank' 
+                                    rel="noreferrer"
+                                ><i className="ti-linkedin"></i>
+                                </a></li>
                             </ul>
                         </div>
                     </div>

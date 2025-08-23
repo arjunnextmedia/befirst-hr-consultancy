@@ -11,6 +11,7 @@ import Services2 from '../../components/Services2'
 import Support from '../../components/Support'
 import BlogSection from '../../components/BlogSection'
 import Footer from '../../components/footer'
+import ProfessionalBanner from '../../components/careers/banner';
 // import Scrollbar from '../../components/scrollbar'
 // import CoreValues from '../../components/CoreValues';
 
@@ -19,7 +20,8 @@ const HomePage3 =() => {
     return(
         <>
             <Navbar2/>
-            <Hero3/>
+            {/* <Hero3/> */}
+            <ProfessionalBanner/>
             <Features featuresClass="wpo-features-section-s2"/>
             <About/>
             <Services2 srvClass={'wpo-service-section-s3'}/>

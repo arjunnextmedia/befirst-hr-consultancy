@@ -7,149 +7,178 @@ const menus = [
     {
         id: 1,
         title: 'Home',
-        link: '/home',
-        submenu: [
-            {
-                id: 11,
-                title: 'Home style 1',
-                link: '/home'
-            },
-            {
-                id: 12,
-                title: 'Home style 2',
-                link: '/home2'
-            },
-            {
-                id: 13,
-                title: 'Home style 3',
-                link: '/home3'
-            },
-        ]
+        link: '/',
+        // submenu: [
+        //     {
+        //         id: 11,
+        //         title: 'Home style 1',
+        //         link: '/home'
+        //     },
+        //     {
+        //         id: 12,
+        //         title: 'Home style 2',
+        //         link: '/home2'
+        //     },
+        //     {
+        //         id: 13,
+        //         title: 'Home style 3',
+        //         link: '/home3'
+        //     },
+        // ]
     },
 
     {
         id: 2,
         title: 'About',
         link: '/about',
+             submenu: [
+            {
+                id: 11,
+                title: 'Who We Are',
+                link: '/about'
+            },
+            {
+                id: 12,
+                title: 'Founder’s Vision',
+                link: '/about2'
+            },
+            {
+                id: 13,
+                title: 'Our Mission & Values',
+                link: '/about3'
+            },
+        ]
     },
 
 {
     id: 3,
         title: 'Services',
         link: '/service',
-        submenu: [
-            {
-                id: 31,
-                title: 'Service',
-                link: '/service'
-            },
-            {
-                id: 32,
-                title: 'Service style 2',
-                link: '/service-s2'
-            },
-            {
-                id: 33,
-                title: 'Service Single',
-                link: '/service-single'
-            }
-        ]
+        // submenu: [
+        //     {
+        //         id: 31,
+        //         title: 'Service',
+        //         link: '/service'
+        //     },
+        //     {
+        //         id: 32,
+        //         title: 'Service style 2',
+        //         link: '/service-s2'
+        //     },
+        //     {
+        //         id: 33,
+        //         title: 'Service Single',
+        //         link: '/service-single'
+        //     }
+        // ]
     },
-{
+    {
     id: 4,
-        title: 'Projects',
-        link: '/project',
-        submenu: [
-            {
-                id: 41,
-                title: 'Projects',
-                link: '/project'
-            },
-            {
-                id: 42,
-                title: 'Projects style 2',
-                link: '/project-s2'
-            },
-            {
-                id: 43,
-                title: 'Projects Single',
-                link: '/project-single'
-            }
-        ]
+        title: 'Articles',
+        link: '/blogs',
+       
     },
-
     {
-        id: 7,
-        title: 'Pages',
-        link: '/',
-        submenu: [
-            {
-                id: 71,
-                title: 'Pricing',
-                link: '/pricing'
-            },
-            {
-                id: 75,
-                title: 'Testimonial',
-                link: '/testimonial'
-            },
-            {
-                id: 76,
-                title: 'Error 404',
-                link: '/404'
-            },
+    id: 5,
+        title: 'FAQs',
+        link: '/faqs',
+       
+    },
+// {
+//     id: 4,
+//         title: 'Projects',
+//         link: '/project',
+//         submenu: [
+//             {
+//                 id: 41,
+//                 title: 'Projects',
+//                 link: '/project'
+//             },
+//             {
+//                 id: 42,
+//                 title: 'Projects style 2',
+//                 link: '/project-s2'
+//             },
+//             {
+//                 id: 43,
+//                 title: 'Projects Single',
+//                 link: '/project-single'
+//             }
+//         ]
+//     },
+
+    // {
+    //     id: 7,
+    //     title: 'Pages',
+    //     link: '/',
+    //     submenu: [
+    //         {
+    //             id: 71,
+    //             title: 'Pricing',
+    //             link: '/pricing'
+    //         },
+    //         {
+    //             id: 75,
+    //             title: 'Testimonial',
+    //             link: '/testimonial'
+    //         },
+    //         {
+    //             id: 76,
+    //             title: 'Error 404',
+    //             link: '/404'
+    //         },
     
-            {
-                id: 77,
-                title: 'Login',
-                link: '/login'
-            },
-            {
-                id: 78,
-                title: 'Register',
-                link: '/register'
-            },
+    //         {
+    //             id: 77,
+    //             title: 'Login',
+    //             link: '/login'
+    //         },
+    //         {
+    //             id: 78,
+    //             title: 'Register',
+    //             link: '/register'
+    //         },
             
-        ]
-    },
+    //     ]
+    // },
 
-    {
-        id: 5,
-        title: 'Blog',
-        link: '/blog',
-        submenu: [
-            {
-                id: 51,
-                title: 'Blog',
-                link: '/blog'
-            },
-            {
-                id: 52,
-                title: 'Blog Left sidebar',
-                link: '/blog-left'
-            },
-            {
-                id: 53,
-                title: 'Blog full width',
-                link: '/blog-fullwidth'
-            },
-            {
-                id: 54,
-                title: 'Blog single',
-                link: '/blog-details'
-            },
-            {
-                id: 55,
-                title: 'Blog single Left sidebar',
-                link: '/blog-details-left'
-            },
-            {
-                id: 56,
-                title: 'Blog single Left sidebar',
-                link: '/blog-details-fullwidth'
-            },
-        ]
-    },
+    // {
+    //     id: 5,
+    //     title: 'Blog',
+    //     link: '/blog',
+    //     submenu: [
+    //         {
+    //             id: 51,
+    //             title: 'Blog',
+    //             link: '/blog'
+    //         },
+    //         {
+    //             id: 52,
+    //             title: 'Blog Left sidebar',
+    //             link: '/blog-left'
+    //         },
+    //         {
+    //             id: 53,
+    //             title: 'Blog full width',
+    //             link: '/blog-fullwidth'
+    //         },
+    //         {
+    //             id: 54,
+    //             title: 'Blog single',
+    //             link: '/blog-details'
+    //         },
+    //         {
+    //             id: 55,
+    //             title: 'Blog single Left sidebar',
+    //             link: '/blog-details-left'
+    //         },
+    //         {
+    //             id: 56,
+    //             title: 'Blog single Left sidebar',
+    //             link: '/blog-details-fullwidth'
+    //         },
+    //     ]
+    // },
     {
         id: 88,
         title: 'Contact',

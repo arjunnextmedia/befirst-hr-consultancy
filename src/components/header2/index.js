@@ -59,7 +59,6 @@ export default class Header2 extends Component {
         if (this.state.searchQuery.trim()) {
             const suggestions = getSearchSuggestions(this.state.searchQuery, 1);
             if (suggestions.length > 0) {
-                // Use React Router's history instead of window.location.href
                 this.props.history?.push(suggestions[0].route) || (window.location.href = suggestions[0].route);
             }
         }
@@ -67,14 +66,11 @@ export default class Header2 extends Component {
 
     // Handle suggestion click - Fixed version
     handleSuggestionClick = (route) => {
-        // Prevent the blur event from interfering
         this.setState({
             showSuggestions: false,
             searchQuery: '',
             searchSuggestions: [],
         }, () => {
-            // Use callback to ensure state is updated before navigation
-            // Try React Router first, fallback to window.location
             if (this.props.history) {
                 this.props.history.push(route);
             } else {
@@ -85,7 +81,6 @@ export default class Header2 extends Component {
 
     // Handle clicking outside to close suggestions - Fixed version
     handleSearchBlur = () => {
-        // Increase delay to ensure suggestion clicks are processed first
         setTimeout(() => {
             this.setState({
                 showSuggestions: false
@@ -95,7 +90,6 @@ export default class Header2 extends Component {
 
     // Add mouse down handler to prevent blur from firing before click
     handleSuggestionMouseDown = (e) => {
-        // Prevent the input from losing focus when clicking on suggestions
         e.preventDefault();
     }
 
@@ -150,7 +144,7 @@ export default class Header2 extends Component {
                                                     <Link onClick={ClickHandler} to="/blogs">Articles</Link>
                                                 </li>
                                                 <li >
-                                                    <Link onClick={ClickHandler} to="/faqs">Faqs</Link>
+                                                    <Link onClick={ClickHandler} to="/faqs">FAQs</Link>
                                                 </li>
                                                 <li><Link onClick={ClickHandler} to="/contact">Contact</Link></li>
                                             </ul>
@@ -187,7 +181,7 @@ export default class Header2 extends Component {
                                                                 <input
                                                                     type="text"
                                                                     className="form-control"
-                                                                    placeholder="Search services..."
+                                                                    placeholder="Search "
                                                                     value={searchQuery}
                                                                     onChange={this.handleSearchInputChange}
                                                                     onBlur={this.handleSearchBlur}

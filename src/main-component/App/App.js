@@ -30,7 +30,7 @@ const App = () => {
       <AllRoute />
       </RouteLoaderWrapper>
       
-      <ToastContainer />
+      <ToastContainer position="top-right" autoClose={3000}/>
       <HRChatbot />
       <Scrollbar />
       <ConsentModal/>

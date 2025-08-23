@@ -50,8 +50,27 @@ export const service = [
         ],
         images: Image1
     },
+   
     {
         id: 2,
+        sIcon: 'fi flaticon-startup',
+        title: 'Human Capital Development',
+        des: 'Simplified payroll setup, management, and staff training for companies across Kerala.',
+        body: `From new employee orientation to employee engagement
+strategies and retention planning, we help organizations
+build a culture that retains talent and supports growth.`,
+        pointTitle: 'Key Programs:',
+        points: [
+            `Orientation Frameworks`,
+            `Employee Engagement Surveys`,
+            `Retention Strategy Development`,
+            `HR Alignment with Business Goals`
+        ],
+        // images: img3
+    },
+
+     {
+        id: 3,
         sIcon: 'fi flaticon-stats',
         title: 'Management Consultancy',
         des: 'Professional management consulting in Kerala to boost business growth.',
@@ -79,24 +98,41 @@ Whether you are a startup founder in Kochi, an SME owner in Kozhikode, or a corp
         images: Image2
     },
     {
-        id: 3,
-        sIcon: 'fi flaticon-startup',
-        title: 'Human Capital Development',
-        des: 'Simplified payroll setup, management, and staff training for companies across Kerala.',
-        body: `From new employee orientation to employee engagement
-strategies and retention planning, we help organizations
-build a culture that retains talent and supports growth.`,
-        pointTitle: 'Key Programs:',
+        id: 4,
+        sIcon: 'fi flaticon-trophy',
+        title: 'Payroll Setup & Training',
+        des: 'Strategic human capital solutions to nurture, engage, and retain top talent in Kerala.',
+        body: `Our team supports businesses in implementing payroll
+systems (e.g., Zoho, Tally) and provides hands-on training to
+manage payroll, leave, and attendance internally.`,
+        pointTitle: 'Services Offered:',
         points: [
-            `Orientation Frameworks`,
-            `Employee Engagement Surveys`,
-            `Retention Strategy Development`,
-            `HR Alignment with Business Goals`
+            `Payroll & Compliance Setup`,
+            `Leave & Attendance Systems`,
+            `HR/Admin Staff Training on Payroll Management`
         ],
-        // images: img3
+        images: Image5
+    },
+    
+    {
+        id: 5,
+        sIcon: 'fi flaticon-trophy',
+        title: 'Recrutment Services',
+        des: 'Trusted recruitment agency in Kerala connecting businesses with skilled professionals.',
+        body: `Our team supports businesses in implementing payroll
+systems (e.g., Zoho, Tally) and provides hands-on training to
+manage payroll, leave, and attendance internally.`,
+        pointTitle: 'Services Offered:',
+        points: [
+            `Custom HR Workshops for Specific Industries`,
+            `HRMS Software Resale & Implementation`,
+            `Employee Engagement Frameworks`,
+            `Annual HR Retainers for Startups & SMEs`
+        ],
+        // images: img6
     },
     {
-        id: 4,
+        id: 6,
         sIcon: 'fi flaticon-business',
         title: 'Staff & Leadership Training',
         des: 'Corporate staff training and leadership development programs designed for Kerala businesses.',
@@ -112,38 +148,5 @@ ensuring cultural relevance and maximum engagement.`,
             `Functional Skill Building for HR & Operations`
         ],
         // images:img4
-    },
-    {
-        id: 5,
-        sIcon: 'fi flaticon-trophy',
-        title: 'Payroll Setup & Training',
-        des: 'Strategic human capital solutions to nurture, engage, and retain top talent in Kerala.',
-        body: `Our team supports businesses in implementing payroll
-systems (e.g., Zoho, Tally) and provides hands-on training to
-manage payroll, leave, and attendance internally.`,
-        pointTitle: 'Services Offered:',
-        points: [
-            `Payroll & Compliance Setup`,
-            `Leave & Attendance Systems`,
-            `HR/Admin Staff Training on Payroll Management`
-        ],
-        images: Image5
-    },
-    {
-        id: 6,
-        sIcon: 'fi flaticon-trophy',
-        title: 'Add-on Services',
-        des: 'Trusted recruitment agency in Kerala connecting businesses with skilled professionals.',
-        body: `Our team supports businesses in implementing payroll
-systems (e.g., Zoho, Tally) and provides hands-on training to
-manage payroll, leave, and attendance internally.`,
-        pointTitle: 'Services Offered:',
-        points: [
-            `Custom HR Workshops for Specific Industries`,
-            `HRMS Software Resale & Implementation`,
-            `Employee Engagement Frameworks`,
-            `Annual HR Retainers for Startups & SMEs`
-        ],
-        // images: img6
     }
 ];
