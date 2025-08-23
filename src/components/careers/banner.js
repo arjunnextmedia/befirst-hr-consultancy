@@ -223,7 +223,7 @@ const ProfessionalBanner = () => {
                 <p
                   className="lead mb-0"
                   style={{
-                    color: '#cbd5e0',
+                    color: 'white',
                     fontSize: 'clamp(1.1rem, 2.8vw, 1.5rem)',
                     fontWeight: '400',
                     lineHeight: '1.4',
@@ -246,7 +246,7 @@ const ProfessionalBanner = () => {
                 <p
                   className="mb-5"
                   style={{
-                    color: '#a0aec0',
+                    color: 'white',
                     fontSize: 'clamp(0.95rem, 2vw, 1.1rem)',
                     maxWidth: '580px',
                     lineHeight: '1.7',

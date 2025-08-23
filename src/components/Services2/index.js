@@ -79,11 +79,11 @@ class Services2 extends Component {
                                             </div>
                                         </div>
                                         <div className="wpo-service-text">
-                                            <h2><Link onClick={ClickHandler} to={`/service-single/${service.id}`}>
+                                            <h2 style={{fontSize:'25px'}}><Link onClick={ClickHandler} to={`/service-single/${service.id}`}>
                                                 {service.title}
                                             </Link>
                                             </h2>
-                                            <p>{service.des}</p>
+                                            <p style={{fontSize:'18px'}}>{service.des}</p>
                                         </div>
                                     </div>
                                 </div>

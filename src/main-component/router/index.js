@@ -63,14 +63,14 @@ const AllRoute = () => {
           <Route path='/404' element={<ErrorPage />} />
           <Route path='/contact' element={<ContactPage />} />
           <Route path='/blogs' element={<BlogPage />} />
-          <Route path='/blog-left-sidebar' element={<BlogPageLeft />} />
+          {/* <Route path='/blog-left-sidebar' element={<BlogPageLeft />} /> */}
           <Route path='/blog-fullwidth' element={<BlogPageFullwidth />} />
           <Route path='/blog-details/blog1' element={<BlogDetails />} />
           <Route path='/blog-details/blog2' element={<BlogSingle2 />} />
           <Route path='/blog-details/blog3' element={<BlogSingle3 />} />
           <Route path='/blog-details/blog4' element={<BlogSingle4 />} />
           <Route path='/blog-details/blog5' element={<BlogSingle5 />} />
-          <Route path='/blog-single-left-sidebar' element={<BlogDetailsLeftSiide />} />
+          {/* <Route path='/blog-single-left-sidebar' element={<BlogDetailsLeftSiide />} /> */}
           <Route path='/blog-single-fullwidth' element={<BlogDetailsFull />} />
           <Route path='/careers' element={<CareersPage />} />
           <Route path='/faqs' element={<FAQPage />} />

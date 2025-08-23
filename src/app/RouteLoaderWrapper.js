@@ -8,7 +8,7 @@ const RouteLoaderWrapper = ({ children }) => {
 
   useEffect(() => {
     setLoading(true);
-    const timer = setTimeout(() => setLoading(false), 1200); // 1.2s loader
+    const timer = setTimeout(() => setLoading(false), 2000); // 1.2s loader
     return () => clearTimeout(timer);
   }, [location.pathname]);
 
