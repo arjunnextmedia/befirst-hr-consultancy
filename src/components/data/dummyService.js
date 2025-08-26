@@ -2,17 +2,19 @@ import Image1 from '../../images/services/hrservice.jpg';
 import Image2 from '../../images/services/managementservice.jpg';
 import Image5 from '../../images/services/payrollservice.jpg';
 
+import icon1 from "../../images/services/icons/icon1.png"
 
 export const service = [
     {
         id: 1,
         sIcon: 'fi flaticon-user',
+        Link: '/service/hr-consulting-services',
         title: 'HR Consulting Services',
         des: 'Expert HR consulting in Kerala to streamline policies, compliance, and workforce management.',
         body: `At Befirst HR & Management Consultancy, we specialize in creating robust HR frameworks that empower businesses to operate smoothly, attract top talent, and maintain compliance with legal and organizational standards. Whether you are a startup finding your footing, an SME scaling up, or a corporate aiming for efficiency, our HR solutions are tailored to your growth stage and long-term vision.`,
         pointTitle: 'Our HR Specializations',
         points: [
-             {
+            {
                 title: "HR Audits & Policy Manuals",
                 desc: "Ensure your HR operations meet compliance standards and reflect your company culture."
             },
@@ -29,9 +31,9 @@ export const service = [
                 desc: "Smooth processes for welcoming talent and managing transitions professionally."
             }
         ],
-           pointTitle2: 'Why Choose Befirst for HR Consultancy?',
+        pointTitle2: 'Why Choose Befirst for HR Consultancy?',
         points2: [
-             {
+            {
                 title: "HR Audits & Policy Manuals",
                 desc: "Ensure your HR operations meet compliance standards and reflect your company culture."
             },
@@ -50,10 +52,11 @@ export const service = [
         ],
         images: Image1
     },
-   
+
     {
         id: 2,
         sIcon: 'fi flaticon-startup',
+        Link: '/service/human-capital-development',
         title: 'Human Capital Development',
         des: 'Simplified payroll setup, management, and staff training for companies across Kerala.',
         body: `From new employee orientation to employee engagement
@@ -69,16 +72,17 @@ build a culture that retains talent and supports growth.`,
         // images: img3
     },
 
-     {
+    {
         id: 3,
         sIcon: 'fi flaticon-stats',
+        Link: '/service/management-consultancy',
         title: 'Management Consultancy',
         des: 'Professional management consulting in Kerala to boost business growth.',
         body: `At Befirst HR & Management Consultancy, we help entrepreneurs, startups, and established businesses in Kerala reengineer processes, overcome operational challenges, and build sustainable business structures that drive long-term success.
 Whether you are a startup founder in Kochi, an SME owner in Kozhikode, or a corporate leader in Trivandrum, our consultancy solutions are tailored to your needs, helping you optimize efficiency, enhance productivity, and prepare for the future.`,
         pointTitle: 'Our Core Advisory Areas',
         points: [
-             {
+            {
                 title: "HR Audits & Policy Manuals",
                 desc: "Ensure your HR operations meet compliance standards and reflect your company culture."
             },
@@ -100,6 +104,7 @@ Whether you are a startup founder in Kochi, an SME owner in Kozhikode, or a corp
     {
         id: 4,
         sIcon: 'fi flaticon-trophy',
+        Link: '/service/payroll=setup-&-training',
         title: 'Payroll Setup & Training',
         des: 'Strategic human capital solutions to nurture, engage, and retain top talent in Kerala.',
         body: `Our team supports businesses in implementing payroll
@@ -113,10 +118,11 @@ manage payroll, leave, and attendance internally.`,
         ],
         images: Image5
     },
-    
+
     {
         id: 5,
         sIcon: 'fi flaticon-trophy',
+        Link: '/service/recrutement-services',
         title: 'Recrutment Services',
         des: 'Trusted recruitment agency in Kerala connecting businesses with skilled professionals.',
         body: `Our team supports businesses in implementing payroll
@@ -134,6 +140,7 @@ manage payroll, leave, and attendance internally.`,
     {
         id: 6,
         sIcon: 'fi flaticon-business',
+        Link: '/service/staff-&-leadership-training',
         title: 'Staff & Leadership Training',
         des: 'Corporate staff training and leadership development programs designed for Kerala businesses.',
         body: `Our training programs focus on improving soft skills,

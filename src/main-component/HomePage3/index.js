@@ -12,6 +12,7 @@ import Support from '../../components/Support'
 import BlogSection from '../../components/BlogSection'
 import Footer from '../../components/footer'
 import ProfessionalBanner from '../../components/careers/banner';
+import HRBanner from '../../components/banner/hrBanner';
 // import Scrollbar from '../../components/scrollbar'
 // import CoreValues from '../../components/CoreValues';
 
@@ -24,6 +25,7 @@ const HomePage3 =() => {
             <ProfessionalBanner/>
             <Features featuresClass="wpo-features-section-s2"/>
             <About/>
+            <HRBanner/>
             <Services2 srvClass={'wpo-service-section-s3'}/>
             {/* <Pricing/> */}
             {/* <FunFact fnClass={'section-padding'}/> */}

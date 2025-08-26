@@ -138,7 +138,7 @@ export default class Header2 extends Component {
                                                     </ul>
                                                 </li>
                                                 <li >
-                                                    <Link onClick={ClickHandler} to="/service">Services</Link>
+                                                    <Link onClick={ClickHandler} to="/services">Services</Link>
                                                 </li>
                                                 <li >
                                                     <Link onClick={ClickHandler} to="/blogs">Articles</Link>

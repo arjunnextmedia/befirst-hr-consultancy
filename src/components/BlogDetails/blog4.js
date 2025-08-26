@@ -9,16 +9,26 @@ import gl2 from '../../images/blog/blog4-sub2.jpg';
 import Footer from '../footer';
 import Navbar2 from '../Navbar2';
 import PageTitle from '../pageTitles/Blog-details-pagetitle';
+import Blog4CTA from './contactCTA/blog5CTA';
 
 const BlogSingle4 = (props) => {
     const submitHandler = (e) => {
         e.preventDefault();
     };
 
-        const bulletList = {
+      const bulletList = {
         paddingLeft: "20px",
         marginBottom: "15px",
         listStyleType: "disc",
+    };
+
+    const bulletItem = {
+        fontSize: "20px",
+        lineHeight: "1.8",
+        textAlign: "start",
+        color: "#495057",
+        fontWeight: "500",
+        marginBottom: "0.5rem",
     };
 
     return (
@@ -54,10 +64,10 @@ Running a business in Kerala isn’t just about delivering great products or ser
                                 <h3>Why HR Compliance Matters in Kerala</h3>
                                 <p>Failing to comply with HR regulations can lead to:</p>
                                 <ul style={bulletList}>
-                                    <li>Heavy fines and penalties</li>
-                                    <li>Legal disputes and reputational damage</li>
-                                    <li>Employee dissatisfaction and turnover</li>
-                                    <li>Business interruptions and audits</li>
+                                    <li style={bulletItem}>Heavy fines and penalties</li>
+                                    <li style={bulletItem}>Legal disputes and reputational damage</li>
+                                    <li style={bulletItem}>Employee dissatisfaction and turnover</li>
+                                    <li style={bulletItem}>Business interruptions and audits</li>
                                 </ul>
                                 <p>
                                     In a competitive market like Kerala, maintaining strong HR compliance not only avoids these risks but also builds trust, transparency, and an attractive workplace for top talent.
@@ -67,38 +77,38 @@ Running a business in Kerala isn’t just about delivering great products or ser
 
                                 <h4>1. Labour Law Compliance</h4>
                                 <ul style={bulletList}>
-                                    <li><strong>The Kerala Shops and Establishments Act, 1960</strong> – Regulates working hours, holidays, and employee rights.</li>
-                                    <li><strong>The Payment of Wages Act, 1936</strong> – Ensures timely payment of wages without unlawful deductions.</li>
-                                    <li><strong>The Payment of Bonus Act, 1965</strong> – Mandates bonus payments based on profits or productivity.</li>
+                                    <li style={bulletItem}><strong>The Kerala Shops and Establishments Act, 1960</strong> – Regulates working hours, holidays, and employee rights.</li>
+                                    <li style={bulletItem}><strong>The Payment of Wages Act, 1936</strong> – Ensures timely payment of wages without unlawful deductions.</li>
+                                    <li style={bulletItem}><strong>The Payment of Bonus Act, 1965</strong> – Mandates bonus payments based on profits or productivity.</li>
                                 </ul>
                                 <p><strong>Tip:</strong>Maintain accurate employee records, including attendance, payroll, and leave registers, to avoid legal trouble.</p>
 
                                 <h4>2. Minimum Wages & Employee Benefits</h4>
                                 <ul style={bulletList}>
-                                    <li>Stay updated with Kerala’s minimum wage notifications for different sectors.</li>
-                                    <li>Provide statutory benefits like <strong> PF (Provident Fund), ESI (Employees’ State Insurance), </strong>  and <strong> gratuity </strong> as per applicable laws.</li>
+                                    <li style={bulletItem}>Stay updated with Kerala’s minimum wage notifications for different sectors.</li>
+                                    <li style={bulletItem}>Provide statutory benefits like <strong> PF (Provident Fund), ESI (Employees’ State Insurance), </strong>  and <strong> gratuity </strong> as per applicable laws.</li>
                                 </ul>
                                 <p><strong>Pain Point for SMEs:</strong> Many small businesses unknowingly underpay wages or delay PF/ESI filings, leading to compliance violations.</p>
 
                                 <h4>3. Workplace Safety & Welfare</h4>
                                 <ul style={bulletList}>
-                                    <li>Adhere to the <strong> Factories Act, 1948 </strong>  (if applicable) for safety protocols.</li>
-                                    <li>Provide clean drinking water, sanitation facilities, first aid, and fire safety measures.</li>
+                                    <li style={bulletItem}>Adhere to the <strong> Factories Act, 1948 </strong>  (if applicable) for safety protocols.</li>
+                                    <li style={bulletItem}>Provide clean drinking water, sanitation facilities, first aid, and fire safety measures.</li>
                                 </ul>
 
                                 <h4>4. Employee Contracts & Documentation</h4>
                                 <p>Every employee should have a clear <strong> appointment letter </strong>  outlining job role, salary, benefits, notice period, and other terms.</p>
                                 <ul style={bulletList}>
-                                    <li>This not only protects your business legally but also builds trust with employees.</li>
+                                    <li style={bulletItem}>This not only protects your business legally but also builds trust with employees.</li>
                                 
                                 </ul>
 
                                 <h4>5. Timely Statutory Filings</h4>
                                 <ul style={bulletList}>
-                                    <li><strong>PF Returns:</strong> Monthly filing before the 15th.</li>
-                                    <li><strong>ESI Returns:</strong> Monthly filing before the 15th.</li>
-                                    <li><strong>TDS on Salaries:</strong> As per Income Tax deadlines.</li>
-                                    <li><strong>Professional Tax:</strong> As per state government notifications.</li>
+                                    <li style={bulletItem}><strong>PF Returns:</strong> Monthly filing before the 15th.</li>
+                                    <li style={bulletItem}><strong>ESI Returns:</strong> Monthly filing before the 15th.</li>
+                                    <li style={bulletItem}><strong>TDS on Salaries:</strong> As per Income Tax deadlines.</li>
+                                    <li style={bulletItem}><strong>Professional Tax:</strong> As per state government notifications.</li>
                                 </ul>
 
                                 <div className="gallery">
@@ -113,10 +123,10 @@ Running a business in Kerala isn’t just about delivering great products or ser
                                 <h3>Challenges Kerala SMEs Face in HR Compliance</h3>
                                 <p>Many SMEs in Kerala struggle with compliance due to:</p>
                                 <ul style={bulletList} >
-                                    <li>Lack of in-house HR expertise</li>
-                                    <li>Frequent changes in labour laws</li>
-                                    <li>Limited time for documentation and filings</li>
-                                    <li>Risk of missed deadlines and penalties</li>
+                                    <li style={bulletItem}>Lack of in-house HR expertise</li>
+                                    <li style={bulletItem}>Frequent changes in labour laws</li>
+                                    <li style={bulletItem}>Limited time for documentation and filings</li>
+                                    <li style={bulletItem}>Risk of missed deadlines and penalties</li>
                                 </ul>
 
                                 <h3>How Befirst HR & Management Consultancy Can Help</h3>
@@ -124,18 +134,18 @@ Running a business in Kerala isn’t just about delivering great products or ser
                                     With <strong> 40+ years of expertise </strong>  from our Principal Consultant, Mr. Abdurahman — who has led HR functions for organizations with over <strong> 10,000 employees </strong>  — we provide:
                                 </p>
                                 <ul style={bulletList}>
-                                    <li>End-to-end HR compliance audits</li>
-                                    <li>Payroll and statutory filings</li>
-                                    <li>Employee documentation and contracts</li>
-                                    <li>Labour law updates and guidance</li>
-                                    <li>Tailored HR solutions for SMEs in Kerala and across India</li>
+                                    <li style={bulletItem}>End-to-end HR compliance audits</li>
+                                    <li style={bulletItem}>Payroll and statutory filings</li>
+                                    <li style={bulletItem}>Employee documentation and contracts</li>
+                                    <li style={bulletItem}>Labour law updates and guidance</li>
+                                    <li style={bulletItem}>Tailored HR solutions for SMEs in Kerala and across India</li>
                                 </ul>
 <p>Our goal is simple — <strong> help your business build, grow, and scale with complete HR compliance so you can focus on what you do best. </strong></p>
                                 <h3>Final Thoughts</h3>
                                 <p>
 This <strong> HR compliance guide Kerala </strong>  should give you a strong foundation, but staying compliant requires constant vigilance and expert support. With the right HR partner, you can avoid penalties, build a better workplace, and create a strong foundation for growth.                                </p>
 
-                                <blockquote>
+                                {/* <blockquote>
                                     <h3 style={{ marginBottom: '0px' }}>
 
                                     Ready to stay 100% HR compliant and stress-free?
@@ -162,7 +172,9 @@ This <strong> HR compliance guide Kerala </strong>  should give you a strong fou
                                             </a>
 
                                         </p>
-                                </blockquote>
+                                </blockquote> */}
+
+                                <Blog4CTA/>
                             </div>
 
                             {/* Author box */}

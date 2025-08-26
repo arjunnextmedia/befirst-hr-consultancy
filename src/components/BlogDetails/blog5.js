@@ -9,16 +9,26 @@ import gl2 from '../../images/blog/blog5-sub2.jpg';
 import Footer from '../footer';
 import Navbar2 from '../Navbar2';
 import PageTitle from '../pageTitles/Blog-details-pagetitle';
+import Blog5CTA from './contactCTA/blog5CTA';
 
 const BlogSingle5 = (props) => {
     const submitHandler = (e) => {
         e.preventDefault();
     };
 
-    const bulletList = {
+  const bulletList = {
         paddingLeft: "20px",
         marginBottom: "15px",
         listStyleType: "disc",
+    };
+
+    const bulletItem = {
+        fontSize: "20px",
+        lineHeight: "1.8",
+        textAlign: "start",
+        color: "#495057",
+        fontWeight: "500",
+        marginBottom: "0.5rem",
     };
 
     return (
@@ -64,11 +74,11 @@ const BlogSingle5 = (props) => {
                                     <h3>Why Your Business Needs the Right HR Partner</h3>
                                     <p>A good HR consultancy does more than just recruitment. It helps you:</p>
                                     <ul style={bulletList}>
-                                        <li>Build a strong and loyal workforce</li>
-                                        <li>Streamline HR policies and processes</li>
-                                        <li>Ensure compliance with labour laws</li>
-                                        <li>Improve employee engagement and performance</li>
-                                        <li>Scale your business with the right people in the right roles</li>
+                                        <li style={bulletItem}>Build a strong and loyal workforce</li>
+                                        <li style={bulletItem}>Streamline HR policies and processes</li>
+                                        <li style={bulletItem}>Ensure compliance with labour laws</li>
+                                        <li style={bulletItem}>Improve employee engagement and performance</li>
+                                        <li style={bulletItem}>Scale your business with the right people in the right roles</li>
                                     </ul>
                                     <p>
                                         When you choose the wrong HR partner, you risk wasting time, money, and missing out on top talent.
@@ -78,11 +88,11 @@ const BlogSingle5 = (props) => {
                                     <h3>Key Pain Points Businesses in Calicut Face</h3>
                                     <p>Before we discuss how to choose the right consultancy, let’s look at common challenges faced by SMEs and startups:</p>
                                     <ul style={bulletList}>
-                                        <li><strong> Struggling to attract qualified candidates </strong> due to lack of employer branding</li>
-                                        <li><strong> High turnover rates </strong> because of mismatched hires</li>
-                                        <li><strong> Inefficient HR processes </strong> that slow down business operations</li>
-                                        <li><strong> Compliance issues </strong> with Kerala and Indian labour laws</li>
-                                        <li><strong> No clear training or development plan </strong> for employees</li>
+                                        <li style={bulletItem}><strong> Struggling to attract qualified candidates </strong> due to lack of employer branding</li>
+                                        <li style={bulletItem}><strong> High turnover rates </strong> because of mismatched hires</li>
+                                        <li style={bulletItem}><strong> Inefficient HR processes </strong> that slow down business operations</li>
+                                        <li style={bulletItem}><strong> Compliance issues </strong> with Kerala and Indian labour laws</li>
+                                        <li style={bulletItem}><strong> No clear training or development plan </strong> for employees</li>
                                     </ul>
                                     <p>If any of this sounds familiar, the right HR consultancy can turn things around.</p>
 
@@ -137,10 +147,10 @@ const BlogSingle5 = (props) => {
                                     {/* Why Befirst HRM */}
                                     <h3>Why Befirst HRM is the Right Choice for Calicut Businesses</h3>
                                     <ul style={bulletList}>
-                                        <li><strong> Proven Leadership </strong> – Led by an HR expert with four decades of global experience</li>
-                                        <li><strong> End-to-End HR Solutions </strong> – Recruitment, employee management, training, compliance, and more</li>
-                                        <li><strong> SME-Focused </strong> – Tailored solutions to help Kerala businesses build strong, scalable teams</li>
-                                        <li><strong> Local & Global Expertise </strong> – Blending international standards with deep understanding of the Kerala market</li>
+                                        <li style={bulletItem}><strong> Proven Leadership </strong> – Led by an HR expert with four decades of global experience</li>
+                                        <li style={bulletItem}><strong> End-to-End HR Solutions </strong> – Recruitment, employee management, training, compliance, and more</li>
+                                        <li style={bulletItem}><strong> SME-Focused </strong> – Tailored solutions to help Kerala businesses build strong, scalable teams</li>
+                                        <li style={bulletItem}><strong> Local & Global Expertise </strong> – Blending international standards with deep understanding of the Kerala market</li>
                                     </ul>
 
                                     {/* Conclusion */}
@@ -156,7 +166,7 @@ const BlogSingle5 = (props) => {
                                     <h3>Ready to Find the Right People for Your Business?</h3>
                                     <p>At Befirst <strong> HR and Management Consultancy, </strong>  we help SMEs in Kerala and India hire, train, and retain the best talent. </p>
                                     {/* Contact CTA */}
-                                    <blockquote>
+                                    {/* <blockquote>
                                         <h3>Contact us today to start building your dream team.</h3> <br />
                                         <p style={{ marginBottom: '0px' }}>
                                             <a href="tel:+919400905954" style={{ color: '#007bff', textDecoration: 'none' }} target='_blank' rel='noopener noreferrer'>
@@ -178,7 +188,10 @@ const BlogSingle5 = (props) => {
                                             </a>
 
                                         </p>
-                                    </blockquote>
+                                    </blockquote> */}
+
+
+                                    <Blog5CTA/>
                                 </div>
 
                                 {/* Author box */}

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Users, TrendingUp, Award, ArrowRight, Briefcase, Target, Star, Shield, Globe, Zap } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import hero1 from '../../images/hero/banner-img-1.jpg'
+import backgroundImage from  '../../images/hero/hero-new-img.avif'
 
 const ProfessionalBanner = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -73,8 +75,9 @@ const ProfessionalBanner = () => {
               rgba(26, 32, 44, 0.85) 75%,
               rgba(10, 14, 26, 0.95) 100%
             ),
-            url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')
-          `,
+            url(${backgroundImage})
+            `,
+            // url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',

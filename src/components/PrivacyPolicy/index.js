@@ -4,16 +4,19 @@ import { Container, Row, Col } from "reactstrap";
 const PrivacyPolicy = () => {
   const sectionTitle = {
     fontWeight: "600",
-    fontSize: "1.2rem",
+    fontSize: "25px",
     marginTop: "35px",
     marginBottom: "15px",
-    color: "#0d6efd",
+    // color: "#0d6efd",
+    color:"black"
   };
 
   const bulletList = {
     paddingLeft: "20px",
     marginBottom: "20px",
     listStyleType: "disc",
+    fontSize: "20px",
+
   };
 
   return (
@@ -39,7 +42,7 @@ const PrivacyPolicy = () => {
             </div>
 
             {/* Intro */}
-            <p style={{ fontSize: "16px", lineHeight: "1.8", color: "#212529" }}>
+            <p style={{ fontSize: "20px", lineHeight: "1.8", color: "#212529" }}>
               <strong>Befirst HR and Management Consultancy</strong> (“we,”
               “our,” “us”) values your privacy and is committed to protecting
               your personal information. This Privacy Policy outlines how we

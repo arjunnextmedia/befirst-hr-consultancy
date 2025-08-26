@@ -9,6 +9,7 @@ import sub2 from '../../images/blog/blog-1sub-2.jpg';
 import Footer from '../footer';
 import Navbar2 from '../Navbar2';
 import PageTitle from '../pageTitles/Blog-details-pagetitle';
+import HRContactCTA from './contactCTA/HRContactCTA';
 
 const BlogSingle1 = (props) => {
     const submitHandler = (e) => {
@@ -21,10 +22,19 @@ const BlogSingle1 = (props) => {
         listStyleType: "disc",
     };
 
+    const bulletItem = {
+        fontSize: "20px",
+        lineHeight: "1.8",
+        textAlign: "start",
+        color: "#495057",
+        fontWeight: "500",
+        marginBottom: "0.5rem",
+    };
+
     return (
         <>
-            <Navbar2 />
-            <PageTitle pageTitle={'Article Details'} pagesub1={'Articles'} pagesub2={'Article Details'} />
+            {/* <Navbar2 /> */}
+            {/* <PageTitle pageTitle={'Article Details'} pagesub1={'Articles'} pagesub2={'Article Details'} /> */}
             <section className="wpo-blog-single-section section-padding">
                 <div className="container">
                     <div className="row">
@@ -60,9 +70,9 @@ const BlogSingle1 = (props) => {
                                         but also for your existing team. For SMEs in Kerala, this matters because:
                                     </p>
                                     <ul style={bulletList}>
-                                        <li>Talent is scarce — skilled professionals have plenty of options.</li>
-                                        <li>Employee turnover is costly — replacing staff drains time and resources.</li>
-                                        <li>Local competition is increasing — other businesses are targeting the same talent pool.</li>
+                                        <li style={bulletItem}><strong> Talent is scarce </strong> — skilled professionals have plenty of options.</li>
+                                        <li style={bulletItem}><strong> Employee turnover is costly </strong> — replacing staff drains time and resources.</li>
+                                        <li style={bulletItem}><strong> Local competition is increasing </strong> — other businesses are targeting the same talent pool.</li>
                                     </ul>
                                     <p>A strong employer brand builds trust, loyalty, and excitement about working for your company.</p>
 
@@ -73,10 +83,10 @@ const BlogSingle1 = (props) => {
                                         Your EVP is the unique set of benefits and values you offer employees. It could be:
                                     </p>
                                     <ul style={bulletList}>
-                                        <li>Flexible work hours</li>
-                                        <li>Growth and training opportunities</li>
-                                        <li>Family-friendly policies</li>
-                                        <li>A collaborative, non-hierarchical culture</li>
+                                        <li style={bulletItem}>Flexible work hours</li>
+                                        <li style={bulletItem}>Growth and training opportunities</li>
+                                        <li style={bulletItem}>Family-friendly policies</li>
+                                        <li style={bulletItem}>A collaborative, non-hierarchical culture</li>
                                     </ul>
                                     <p>
                                         <strong>Tip:</strong> Make sure your EVP reflects what employees in Kerala value most — such as job stability,
@@ -86,33 +96,33 @@ const BlogSingle1 = (props) => {
                                     <h4>2. Showcase Your Workplace Culture</h4>
                                     <p>Share:</p>
                                     <ul style={bulletList}>
-                                        <li>Employee success stories</li>
-                                        <li>Team celebrations and community involvement</li>
-                                        <li>Behind-the-scenes moments on social media</li>
+                                        <li style={bulletItem}>Employee success stories</li>
+                                        <li style={bulletItem}>Team celebrations and community involvement</li>
+                                        <li style={bulletItem}>Behind-the-scenes moments on social media</li>
                                     </ul>
 
                                     <h4>3. Offer Career Development Opportunities</h4>
                                     <p>Kerala’s young professionals are eager to learn. Offer:</p>
                                     <ul style={bulletList}>
-                                        <li>Skills training workshops</li>
-                                        <li>Mentorship programs</li>
-                                        <li>Clear promotion pathways</li>
+                                        <li style={bulletItem}>Skills training workshops</li>
+                                        <li style={bulletItem}>Mentorship programs</li>
+                                        <li style={bulletItem}>Clear promotion pathways</li>
                                     </ul>
 
                                     <h4>4. Build a Strong Online Presence</h4>
                                     <p>Maintain an engaging and consistent presence across:</p>
                                     <ul style={bulletList}>
-                                        <li>Website career pages</li>
-                                        <li>LinkedIn and social media</li>
-                                        <li>Employee testimonial sections</li>
+                                        <li style={bulletItem}>Website career pages</li>
+                                        <li style={bulletItem}>LinkedIn and social media</li>
+                                        <li style={bulletItem}>Employee testimonial sections</li>
                                     </ul>
 
                                     <h4>5. Involve Your Employees in Branding</h4>
                                     <p>Encourage employees to:</p>
                                     <ul style={bulletList}>
-                                        <li>Share their work experiences online</li>
-                                        <li>Participate in recruitment events</li>
-                                        <li>Refer candidates for open roles</li>
+                                        <li style={bulletItem}>Share their work experiences online</li>
+                                        <li style={bulletItem}>Participate in recruitment events</li>
+                                        <li style={bulletItem}>Refer candidates for open roles</li>
                                     </ul>
 
                                     <div className="gallery">
@@ -126,19 +136,19 @@ const BlogSingle1 = (props) => {
 
                                     <h3>Common Employer Branding Mistakes SMEs Should Avoid</h3>
                                     <ul style={bulletList}>
-                                        <li>Overpromising benefits and failing to deliver</li>
-                                        <li>Ignoring employee feedback</li>
-                                        <li>Not having a structured onboarding process</li>
-                                        <li>Treating employer branding as a one-time project</li>
+                                        <li style={bulletItem}>Overpromising benefits and failing to deliver</li>
+                                        <li style={bulletItem}>Ignoring employee feedback</li>
+                                        <li style={bulletItem}>Not having a structured onboarding process</li>
+                                        <li style={bulletItem}>Treating employer branding as a one-time project</li>
                                     </ul>
 
                                     <h3>The ROI of Strong Employer Branding</h3>
                                     <p>SMEs that invest in employer branding see:</p>
                                     <ul style={bulletList}>
-                                        <li>Reduced hiring costs</li>
-                                        <li>Higher employee retention rates</li>
-                                        <li>Increased productivity</li>
-                                        <li>Stronger word-of-mouth recruitment</li>
+                                        <li style={bulletItem}>Reduced hiring costs</li>
+                                        <li style={bulletItem}>Higher employee retention rates</li>
+                                        <li style={bulletItem}>Increased productivity</li>
+                                        <li style={bulletItem}>Stronger word-of-mouth recruitment</li>
                                     </ul>
 
                                     <h3>Final Thoughts</h3>
@@ -151,7 +161,7 @@ const BlogSingle1 = (props) => {
                                         At<strong> Befirst HR & Management Consultancy,</strong> we specialise in helping SMEs build powerful employer brands
                                         that attract the right people and fuel business growth.
                                     </p>
-
+{/* 
                                     <blockquote>
                                         <h3>
                                             Ready to build your employer brand in Kerala?
@@ -176,7 +186,11 @@ const BlogSingle1 = (props) => {
                                             </a>
 
                                         </p>
-                                    </blockquote>
+                                    </blockquote> */}
+
+
+
+                                    <HRContactCTA/>
                                 </div>
 
                                 {/* Author box */}
@@ -199,7 +213,7 @@ const BlogSingle1 = (props) => {
                     </div>
                 </div>
             </section>
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 };

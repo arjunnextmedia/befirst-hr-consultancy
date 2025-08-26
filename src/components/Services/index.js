@@ -8,6 +8,7 @@ import {
   GraduationCap
 } from 'lucide-react';
 import { service as dummyServices } from '../data/dummyService';
+import { Link } from 'react-router-dom';
 
 // Map the dummy services to the format expected by the component
 const serviceData = dummyServices.map((service, index) => {
@@ -38,10 +39,11 @@ const serviceData = dummyServices.map((service, index) => {
   
   return {
     id: service.id,
+    link: service.Link,
     icon: iconComponent,
     title: service.title,
     des: service.des,
-    delay: index * 100 // Add delay based on index
+    delay: index * 100 
   };
 });
 
@@ -75,35 +77,37 @@ const ServiceCard = ({ service, index }) => {
 
     return (
         <div className="col-lg-4 col-md-6 col-12 mb-4">
-            <div 
-                className="service-card h-100"
-                style={{...cardStyle, ...hoverStyle}}
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-            >
-                <div className="service-card-inner">
-                    {/* Icon Section */}
-                    <div className="service-icon-wrapper">
-                        <div 
-                            className="service-icon"
-                            style={{ 
-                                transform: isHovered ? 'scale(1.1)' : 'scale(1)',
-                                transition: 'all 0.3s ease'
-                            }}
-                        >
-                            <IconComponent size={28} color="white" />
-                        </div>
-                        <div className="icon-pulse"></div>
-                    </div>
-
-                    {/* Content Section */}
-                    <div className="service-content">
-                        <h3 className="service-title">{service.title}</h3>
-                        <p className="service-description">{service.des}</p>
-                    </div>
-                </div>
+      <Link
+        to={service.link}
+        style={{ textDecoration: 'none' }}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        <div className="service-card h-100" style={{ ...cardStyle, ...hoverStyle }}>
+          <div className="service-card-inner">
+            {/* Icon Section */}
+            <div className="service-icon-wrapper">
+              <div
+                className="service-icon"
+                style={{
+                  transform: isHovered ? 'scale(1.1)' : 'scale(1)',
+                  transition: 'all 0.3s ease'
+                }}
+              >
+                <IconComponent size={28} color="white" />
+              </div>
+              <div className="icon-pulse"></div>
             </div>
+
+            {/* Content Section */}
+            <div className="service-content">
+              <h3 className="service-title">{service.title}</h3>
+              <p className="service-description">{service.des}</p>
+            </div>
+          </div>
         </div>
+      </Link>
+    </div>
     );
 };
 

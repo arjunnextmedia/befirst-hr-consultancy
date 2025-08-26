@@ -1,22 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import PremiumCTA from '../../cta';
 
 
-
-const ServiceSingleSidebar = (props) => {
-    return(
+const ServiceSingleSidebar = ({ CTAIMG }) => {
+    return (
         <div className="col-lg-4 col-md-8">
             <div className="wpo-single-sidebar">
                 <div className="wpo-service-widget widget">
-                        <h2>All Services</h2>
-                        <ul>
-                            <li><Link to="/service-single/1">HR Consulting Services</Link></li>
-                            <li><Link to="/service-single/2">Management Consultancy</Link></li>
-                            <li><Link to="/service-single/3">Human Capital Development</Link></li>
-                            <li><Link to="/service-single/4">Staff & Leadership Training</Link></li>
-                            <li><Link to="/service-single/5">Payroll Setup & Training</Link></li>
-                            <li><Link to="/service-single/6">Add-on Services</Link></li>
-                        </ul>
+                    <h2>All Services</h2>
+                    <ul>
+                        <li><Link to="/service/hr-consulting-services">HR Consulting Services</Link></li>
+                        <li><Link to="/service/management-consultancy">Management Consultancy</Link></li>
+                        <li><Link to="/service/human-capital-development">Human Capital Development</Link></li>
+                        <li><Link to="/service/staff-&-leadership-training">Staff & Leadership Training</Link></li>
+                        <li><Link to="/service/payroll=setup-&-training">Payroll Setup & Training</Link></li>
+                        <li><Link to="/service/recrutement-services">Recrutment Services</Link></li>
+                    </ul>
                 </div>
                 {/* <div className="wpo-newsletter-widget widget">
                         <h2>Newsletter</h2>
@@ -40,11 +40,13 @@ const ServiceSingleSidebar = (props) => {
                         </ul>
                 </div> */}
 
-                <div className="wpo-contact-widget widget">
+                {/* <div className="wpo-contact-widget widget">
                         <h2>How We Can <br/> Help You!</h2>
                         <p>Need a compliant and performance-driven HR system? </p>
                         <Link to="/contact">Contact Us</Link>
-                </div>
+                </div> */}
+                <PremiumCTA CTAIMG={CTAIMG} />
+
             </div>
         </div>
     )

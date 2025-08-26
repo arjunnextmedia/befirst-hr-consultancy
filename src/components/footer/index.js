@@ -91,10 +91,10 @@ const Footer = (props) => {
                                     <h3>Our Services</h3>
                                 </div>
                                 <ul>
-                                    <li><Link onClick={ClickHandler} to="/service-single/1">HR Consulting Services</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/service-single/2">Human Capital Development</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/service-single/3">Management Consultancy</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/service-single/4">Payroll Management & Training</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/service/hr-consulting-services">HR Consulting Services</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/service/human-capital-development">Human Capital Development</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/service/management-consultancy">Management Consultancy</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/service/payroll=setup-&-training">Payroll Management & Training</Link></li>
 
                                 </ul>
                             </div>
@@ -107,8 +107,8 @@ const Footer = (props) => {
                                     <h3>Consultancy</h3>
                                 </div>
                                 <ul>
-                                    <li><Link onClick={ClickHandler} to="/service-single/5">Recruitment Services</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/service-single/6">Staff & Leadership Training</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/service/recrutement-services">Recruitment Services</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/service/staff-&-leadership-training">Staff & Leadership Training</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -122,8 +122,8 @@ const Footer = (props) => {
                                     <h3>Explore</h3>
                                 </div>
                                 <ul>
-                                    <li><Link onClick={ClickHandler} to="/careers">Careers</Link></li>
-                                    <li style={{ marginBottom: '20px' }}><Link onClick={ClickHandler} to="/about">About Us</Link></li>
+                                    <li ><Link onClick={ClickHandler} to="/about">About Us</Link></li>
+                                    <li style={{ marginBottom: '20px' }}><Link onClick={ClickHandler} to="/careers">Careers</Link></li>
 
                                 </ul>
                                 <div className="widget-title" style={{ marginTop: '20px' }}>
@@ -131,7 +131,7 @@ const Footer = (props) => {
                                 </div>
                                 <ul>
                                     <li><Link onClick={ClickHandler} to="/privacy-policy">Privacy Policy</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/terms">Terms of Use</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/terms-of-use">Terms of Use</Link></li>
                                 </ul>
 
                             </div>

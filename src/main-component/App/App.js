@@ -21,7 +21,7 @@ const App = () => {
       
       <ToastContainer position="top-right" autoClose={3000}/>
       <HRChatbot />
-      <Scrollbar />
+      {/* <Scrollbar /> */}
       <ConsentModal/>
     </div>
   );

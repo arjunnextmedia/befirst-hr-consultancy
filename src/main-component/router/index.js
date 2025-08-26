@@ -7,7 +7,7 @@ import Homepage3 from '../HomePage3'
 import AboutPage from '../AboutPage'
 import ServicePage from '../ServicePage'
 import ServicePageS2 from '../ServicePageS2'
-import ServiceSinglePage from '../ServiceSinglePage'
+import ServiceSinglePage from '../ServiceSinglePage/service1'
 // import ProjectPage from '../ProjectPage'
 // import ProjectPageS2 from '../ProjectPageS2'
 // import ProjectSinglePage from '../ProjectSinglePage'
@@ -35,6 +35,12 @@ import TermsOfUsePage from '../TermsOfUse';
 import VisionAndMission from '../AboutePage3';
 import FoundersVisionPage from '../FoundersVisionPage';
 import CareersFormPage from '../careersFormPage';
+import ServiceSinglePage2 from '../ServiceSinglePage/service2';
+import ServiceSinglePage3 from '../ServiceSinglePage/service3';
+import ServiceSinglePage4 from '../ServiceSinglePage/service4';
+import ServiceSinglePage5 from '../ServiceSinglePage/service5';
+import ServiceSinglePage6 from '../ServiceSinglePage/service6';
+import ServiceSinglePage1 from '../ServiceSinglePage/service1';
 
 
 const AllRoute = () => {
@@ -43,13 +49,38 @@ const AllRoute = () => {
     <div className="App">
         <Routes>
           <Route exact path='/' element={<Homepage3 />} />
-          <Route path='/home' element={<Homepage/>} />
-          <Route path='/home2' element={<Homepage2/>} />
-          <Route path='/home3' element={<Homepage3/>} />
           <Route path='/about' element={<AboutPage/>} />
-          <Route path='/service' element={<ServicePage/>} />
+          <Route path='/services' element={<ServicePage/>} />
           <Route path='/service-s2' element={<ServicePageS2/>} />
-          <Route path='/service-single/:id' element={<ServiceSinglePage />} />
+          {/* <Route path='/service-single/:id' element={<ServiceSinglePage />} /> */}
+          <Route path='/service/hr-consulting-services' element={<ServiceSinglePage1 />} />
+          <Route path='/service/human-capital-development' element={<ServiceSinglePage2 />} />
+          <Route path='/service/management-consultancy' element={<ServiceSinglePage3 />} />
+          <Route path='/service/payroll=setup-&-training' element={<ServiceSinglePage4 />} />
+          <Route path='/service/recrutement-services' element={<ServiceSinglePage5 />} />
+          <Route path='/service/staff-&-leadership-training' element={<ServiceSinglePage6 />} />
+          <Route path='/testimonial' element={<TestimonialPage />} />
+          <Route path='/404' element={<ErrorPage />} />
+          <Route path='/contact' element={<ContactPage />} />
+          <Route path='/blogs' element={<BlogPage />} />
+          <Route path='/blog-fullwidth' element={<BlogPageFullwidth />} />
+          <Route path='/blog-details/blog1' element={<BlogDetails />} />
+          <Route path='/blog-details/blog2' element={<BlogSingle2 />} />
+          <Route path='/blog-details/blog3' element={<BlogSingle3 />} />
+          <Route path='/blog-details/blog4' element={<BlogSingle4 />} />
+          <Route path='/blog-details/blog5' element={<BlogSingle5 />} />
+          <Route path='/blog-single-fullwidth' element={<BlogDetailsFull />} />
+          <Route path='/careers' element={<CareersPage />} />
+          <Route path='/faqs' element={<FAQPage />} />
+          <Route path='/privacy-policy' element={<PrivacyPolicyPage />} />
+          <Route path='/terms-of-use' element={<TermsOfUsePage />} />
+          <Route path='/about2' element={<FoundersVisionPage />} />
+          <Route path='/about3' element={<VisionAndMission />} />
+          <Route path='/careers/careers-form' element={<CareersFormPage />} />
+
+          {/* <Route path='/home' element={<Homepage/>} />
+          <Route path='/home2' element={<Homepage2/>} /> */}
+          {/* <Route path='/home3' element={<Homepage3/>} /> */}
           {/* <Route path='/service-single/' element={<ServiceSinglePage />} />
           <Route path='/service-single/' element={<ServiceSinglePage />} />
           <Route path='/service-single/' element={<ServiceSinglePage />} />
@@ -59,29 +90,8 @@ const AllRoute = () => {
           <Route path='/project-s2' element={<ProjectPageS2 />} />
           <Route path='/project-single' element={<ProjectSinglePage />} />
           <Route path='/pricing' element={<PricingPage />} /> */}
-          <Route path='/testimonial' element={<TestimonialPage />} />
-          <Route path='/404' element={<ErrorPage />} />
-          <Route path='/contact' element={<ContactPage />} />
-          <Route path='/blogs' element={<BlogPage />} />
           {/* <Route path='/blog-left-sidebar' element={<BlogPageLeft />} /> */}
-          <Route path='/blog-fullwidth' element={<BlogPageFullwidth />} />
-          <Route path='/blog-details/blog1' element={<BlogDetails />} />
-          <Route path='/blog-details/blog2' element={<BlogSingle2 />} />
-          <Route path='/blog-details/blog3' element={<BlogSingle3 />} />
-          <Route path='/blog-details/blog4' element={<BlogSingle4 />} />
-          <Route path='/blog-details/blog5' element={<BlogSingle5 />} />
           {/* <Route path='/blog-single-left-sidebar' element={<BlogDetailsLeftSiide />} /> */}
-          <Route path='/blog-single-fullwidth' element={<BlogDetailsFull />} />
-          <Route path='/careers' element={<CareersPage />} />
-          <Route path='/faqs' element={<FAQPage />} />
-          <Route path='/privacy-policy' element={<PrivacyPolicyPage />} />
-          <Route path='/terms' element={<TermsOfUsePage />} />
-          <Route path='/about2' element={<FoundersVisionPage />} />
-          <Route path='/about3' element={<VisionAndMission />} />
-          <Route path='/careers/careers-form' element={<CareersFormPage />} />
-
-
-
           {/* <Route path='/login' element={<LoginPage />} />
           <Route path='/register' element={<SignUpPage />} />
           <Route path='/forgot-password' element={<ForgotPassword />} /> */}

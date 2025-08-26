@@ -62,19 +62,19 @@ const AboutSection = (props) => {
 
 
     const bulletList = {
-  paddingLeft: "20px",
-  marginBottom: "15px",
-  listStyleType: "disc",
-};
+        paddingLeft: "20px",
+        marginBottom: "15px",
+        listStyleType: "disc",
+    };
 
-const bulletItem = {
-  fontSize: "20px",
-  lineHeight: "1.8",
-  textAlign: "start",
-  color: "#495057",
-  fontWeight: "500",
-  marginBottom: "0.5rem",
-};
+    const bulletItem = {
+        fontSize: "20px",
+        lineHeight: "1.8",
+        textAlign: "start",
+        color: "#495057",
+        fontWeight: "500",
+        marginBottom: "0.5rem",
+    };
     return (
         <section className={`wpo-about-section ${props.abClass}`}>
             <div className="container">
@@ -387,7 +387,7 @@ const bulletItem = {
                             overflow: 'hidden'
                         }}>
                             {/* The Idea Behind Befirst HRM section */}
-                             <div className="text-center" style={{ marginBottom: '40px' }}>
+                            <div className="text-center" style={{ marginBottom: '40px' }}>
                                 <h3 style={{
                                     fontSize: '2.5rem',
                                     fontWeight: '600',
@@ -472,16 +472,16 @@ const bulletItem = {
                                             At the heart of Befirst HRM is <strong style={{ color: '#0062cc' }}>Mr. Abdurahman</strong>, whose four decades of experience in business management, operations, and entrepreneurship form the backbone of our approach.
                                         </p>
                                         <ul style={bulletList}>
-      <li style={bulletItem}>
-        His career spans multiple industries, giving us a 360-degree understanding of business challenges.
-      </li>
-      <li style={bulletItem}>
-        His insights help us design HR strategies that don’t just work on paper but deliver measurable results in the real world.
-      </li>
-      <li style={{ ...bulletItem, marginBottom: 0 }}>
-        This legacy ensures we don’t just offer HR services — we offer business growth solutions.
-      </li>
-    </ul>
+                                            <li style={bulletItem}>
+                                                His career spans multiple industries, giving us a 360-degree understanding of business challenges.
+                                            </li>
+                                            <li style={bulletItem}>
+                                                His insights help us design HR strategies that don’t just work on paper but deliver measurable results in the real world.
+                                            </li>
+                                            <li style={{ ...bulletItem, marginBottom: 0 }}>
+                                                This legacy ensures we don’t just offer HR services — we offer business growth solutions.
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -528,7 +528,7 @@ const bulletItem = {
                                 zIndex: '0'
                             }}></div>
                         </div>
-                        
+
                     </div>
                 </div>
 
@@ -592,8 +592,8 @@ const bulletItem = {
                                 </div>
                             </div> */}
 
-                            {/* Decorative background element */}
-                            {/* <div style={{
+                {/* Decorative background element */}
+                {/* <div style={{
                                 position: 'absolute',
                                 top: '-50px',
                                 right: '-50px',
@@ -736,13 +736,13 @@ const bulletItem = {
                                     color: '#2c3e50',
                                     marginBottom: '15px'
                                 }}>The Impact We Create</h3>
-                                   <div style={{
-                                width: '80px',
-                                height: '4px',
-                                backgroundColor: '#007bff',
-                                margin: '0 auto 25px auto',
-                                borderRadius: '2px'
-                            }}></div>
+                                <div style={{
+                                    width: '80px',
+                                    height: '4px',
+                                    backgroundColor: '#007bff',
+                                    margin: '0 auto 25px auto',
+                                    borderRadius: '2px'
+                                }}></div>
                             </div>
 
                             <div className="row">
@@ -826,22 +826,22 @@ const bulletItem = {
                 {/* Call to Action */}
                 <div className="row">
                     <div className="col-12">
-                        <div style={{ 
-                            background: 'linear-gradient(135deg, #007bff 0%, #0056b3 100%)', 
-                            padding: '50px 40px', 
+                        <div style={{
+                            background: 'linear-gradient(135deg, #007bff 0%, #0056b3 100%)',
+                            padding: '50px 40px',
                             borderRadius: '20px',
                             color: '#fff',
                             textAlign: 'center'
                         }}>
-                            <h3 style={{ 
-                                fontSize: '2.2rem', 
-                                fontWeight: '600', 
+                            <h3 style={{
+                                fontSize: '2.2rem',
+                                fontWeight: '600',
                                 marginBottom: '20px',
                                 color: '#fff'
                             }}>Ready to Build Your Dream Team?</h3>
-                            <p style={{ 
-                                fontSize: '1.2rem', 
-                                lineHeight: '1.7', 
+                            <p style={{
+                                fontSize: '1.2rem',
+                                lineHeight: '1.7',
                                 marginBottom: '30px',
                                 color: 'rgba(255,255,255,0.9)',
                                 maxWidth: '800px',
@@ -849,11 +849,11 @@ const bulletItem = {
                             }}>
                                 Whether you're a startup in Kozhikode or an established SME in Kerala, we'll help you attract, manage, and retain the right people so your business can grow faster and scale sustainably.
                             </p>
-                            
+
                             <div style={{ marginTop: '30px' }}>
-                                <Link 
-                                    onClick={ClickHandler} 
-                                    to="/contact" 
+                                <Link
+                                    onClick={ClickHandler}
+                                    to="/contact"
                                     className="btn"
                                     style={{
                                         backgroundColor: '#fff',
@@ -872,9 +872,9 @@ const bulletItem = {
                                     Get Expert Assistance
                                 </Link>
                             </div>
-                            
-                            <p style={{ 
-                                fontSize: '1rem', 
+
+                            <p style={{
+                                fontSize: '1rem',
                                 marginTop: '20px',
                                 color: 'rgba(255,255,255,0.8)',
                                 margin: '20px 0 0 0'

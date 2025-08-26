@@ -6,6 +6,8 @@ import blog2 from '../../images/blog/blog-90x80-2.jpg';
 import blog3 from '../../images/blog/blog-90x80-3.jpg';
 // import blog4 from '../../images/blog/blog-90x80-4.jpg';
 import blog5 from '../../images/blog/blog-90x80-5.jpg';
+import PremiumCTA from '../cta';
+import ctsImg from '../../images/blog/cta-img-3.jpg'
 
 
 
@@ -137,11 +139,13 @@ const BlogSidebar4 = (props) => {
                         <li><Link onClick={ClickHandler} to="/blog-single">Market Reserch</Link></li>
                     </ul>
                 </div> */}
-                <div className="wpo-contact-widget widget">
+                {/* <div className="wpo-contact-widget widget">
                         <h2>How We Can <br/> Help You!</h2>
                         <p>Need a compliant and performance-driven HR system? </p>
                         <Link onClick={ClickHandler} to="/contact">Contact Us</Link>
-                </div>
+                </div> */}
+                <PremiumCTA CTAIMG={ctsImg}/>
+
             </div>
         </div>
      )

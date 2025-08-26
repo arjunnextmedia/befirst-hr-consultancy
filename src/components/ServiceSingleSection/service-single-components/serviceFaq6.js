@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 
 
-const Benefits = (props) => {
-    const [expanded, setExpanded] = React.useState(false);
+const ServiceFAQ6 = (props) => {
+    const [expanded, setExpanded] = useState(false);
 
     const handleChange = (panel) => (event, isExpanded) => {
         setExpanded(isExpanded ? panel : false);
@@ -25,11 +25,14 @@ const Benefits = (props) => {
                                 aria-controls="panel1bh-content"
                                 id="panel1bh-header"
                             >
-                                <Typography>Why should my Kerala-based business invest in HR consultancy?</Typography>
+                                <Typography>
+                                    Who can benefit from your staff and leadership training?
+                                </Typography>
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography>
-                                    HR consultancy ensures your business has structured policies, legal compliance, and effective talent management systems – essential for growth, productivity, and avoiding costly legal issues.                                </Typography>
+                                    Our programs are ideal for entrepreneurs, startups, small-to-large businesses, managers, CEOs, and C-suite executives looking to improve team performance and leadership skills.
+                                </Typography>
                             </AccordionDetails>
                         </Accordion>
                         <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
@@ -38,11 +41,14 @@ const Benefits = (props) => {
                                 aria-controls="panel2bh-content"
                                 id="panel2bh-header"
                             >
-                                <Typography>Do you offer HR consultancy for startups in Kerala?</Typography>
+                                <Typography>
+                                    Do you provide training for specific industries?
+                                </Typography>
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography>
-                                    Yes! We specialize in creating scalable HR frameworks for startups, ensuring they are ready for rapid growth while maintaining compliance and efficiency.                                </Typography>
+                                    Yes. We customize our programs for sectors like IT, retail, hospitality, manufacturing, education, healthcare, and more.
+                                </Typography>
                             </AccordionDetails>
                         </Accordion>
                         <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
@@ -51,12 +57,15 @@ const Benefits = (props) => {
                                 aria-controls="panel3bh-content"
                                 id="panel3bh-header"
                             >
-                                <Typography> How long does it take to set up a complete HR system?</Typography>
+                                <Typography>
+                                    How long are your training programs?
+                                </Typography>
 
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography>
-                                    Depending on your organization’s size, it can take 2–6 weeks to design, implement, and train your team on the new HR system.                                </Typography>
+                                    Sessions can range from half-day workshops to multi-week development programs, depending on your needs.
+                                </Typography>
                             </AccordionDetails>
                         </Accordion>
                         <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
@@ -65,11 +74,14 @@ const Benefits = (props) => {
                                 aria-controls="panel4bh-content"
                                 id="panel4bh-header"
                             >
-                                <Typography>Can you help with performance appraisal systems?</Typography>
+                                <Typography>
+                                    Do you offer on-site and online training?
+                                </Typography>
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography>
-                                    Absolutely. We create customized job descriptions, KPIs, and appraisal systems to measure and improve employee performance.                                </Typography>
+                                    Yes. We conduct in-person training in Kozhikode, Kochi, and Trivandrum, as well as virtual sessions for remote teams.
+                                </Typography>
                             </AccordionDetails>
                         </Accordion>
                         <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
@@ -78,11 +90,13 @@ const Benefits = (props) => {
                                 aria-controls="panel4bh-content"
                                 id="panel4bh-header"
                             >
-                                <Typography>Do you provide ongoing HR support after setup?</Typography>
+                                <Typography>
+                                    How can I get started?
+                                </Typography>
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography>
-                                    Yes, we offer both one-time setup services and ongoing HR management support packages to ensure your systems evolve with your business.
+                                    Simply call us or fill out our online consultation form. We’ll assess your needs and recommend the best training plan for your business.
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
@@ -94,4 +108,4 @@ const Benefits = (props) => {
     )
 }
 
-export default Benefits;
+export default ServiceFAQ6;

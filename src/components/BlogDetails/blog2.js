@@ -9,6 +9,7 @@ import gl2 from '../../images/blog/blog2-sub2.jpg';
 import Footer from '../footer';
 import Navbar2 from '../Navbar2';
 import PageTitle from '../pageTitles/Blog-details-pagetitle';
+import Blog2CTA from './contactCTA/blog2CTA';
 
 const BlogSingle2 = (props) => {
     const submitHandler = (e) => {
@@ -133,11 +134,9 @@ If you’re struggling to find the right talent, let
                                     </p> 
                                 </p>
 
-                                 <blockquote>
+                                 {/* <blockquote>
                                 <p><strong>📞 Contact us today</strong> to discuss how recruitment outsourcing can transform your hiring process.</p>
-                                        {/* <h3>
-                                            Ready to build your employer brand in Kerala?
-                                        </h3>  */}
+                                     
                                         <br />
                                         <p style={{ marginBottom: '0px' }}>
                                             <a href="tel:+919400905954" style={{ color: '#007bff', textDecoration: 'none' }} target='_blank' rel='noopener noreferrer'>
@@ -152,14 +151,10 @@ If you’re struggling to find the right talent, let
                                             </a>
                                         </p>
                                         <br />
-                                        {/* <p style={{ marginBottom: '0px' }}>
-                                            <a href='https://www.befirsthrm.com' style={{ color: '#007bff', textDecoration: 'none' }} target='_blank' rel='noopener noreferrer'>
+                                    
+                                    </blockquote> */}
 
-                                                🌐 Visit: www.befirsthrm.com
-                                            </a>
-
-                                        </p> */}
-                                    </blockquote>
+                                    <Blog2CTA/>
                             </div>
 
                             {/* <div className="tag-share clearfix">

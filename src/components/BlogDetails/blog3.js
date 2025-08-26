@@ -9,16 +9,26 @@ import gl2 from '../../images/blog/blog3-sub-2.jpg';
 import Footer from '../footer';
 import Navbar2 from '../Navbar2';
 import PageTitle from '../pageTitles/Blog-details-pagetitle';
+import Blog3CTA from './contactCTA/blog3CTA';
 
 const BlogSingle3 = (props) => {
     const submitHandler = (e) => {
         e.preventDefault();
     };
 
-    const bulletList = {
+   const bulletList = {
         paddingLeft: "20px",
         marginBottom: "15px",
         listStyleType: "disc",
+    };
+
+    const bulletItem = {
+        fontSize: "20px",
+        lineHeight: "1.8",
+        textAlign: "start",
+        color: "#495057",
+        fontWeight: "500",
+        marginBottom: "0.5rem",
     };
 
     return (
@@ -139,9 +149,9 @@ const BlogSingle3 = (props) => {
                                         <strong> EPF and ESI management </strong>  to <strong> statutory compliance and salary structuring, </strong>  we help you avoid costly payroll mistakes and focus on scaling your business.
                                     </p>
                                     <ul style={bulletList}>
-                                        <li>Reduce compliance risks</li>
-                                        <li>Ensure timely, error-free payments</li>
-                                        <li>Save time and operational costs</li>
+                                        <li style={bulletItem}>Reduce compliance risks</li>
+                                        <li style={bulletItem}>Ensure timely, error-free payments</li>
+                                        <li style={bulletItem}>Save time and operational costs</li>
                                     </ul>
                                     {/* <p>
                                         With over 40 years of leadership experience in HR and people management, Befirst HRM ensures your payroll is compliant, accurate, and stress-free. From EPF and ESI management to statutory compliance and salary structuring, we help you avoid costly payroll mistakes and focus on scaling your business.
@@ -149,6 +159,7 @@ const BlogSingle3 = (props) => {
 
                                     <h3>Ready to avoid payroll mistakes?</h3>
                                     <p>Don’t let payroll errors slow down your business growth.</p>
+{/* 
                                     <blockquote>
                                         <h3>Contact Befirst HR & Management Consultancy today — Your trusted HR partner in Calicut.</h3>
                                         <br />
@@ -172,7 +183,9 @@ const BlogSingle3 = (props) => {
                                             </a>
 
                                         </p>
-                                    </blockquote>
+                                    </blockquote> */}
+
+<Blog3CTA/>
                                 </div>
 
                                 {/* Author box */}
