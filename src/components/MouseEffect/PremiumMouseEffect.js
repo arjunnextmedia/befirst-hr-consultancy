@@ -5,9 +5,7 @@ const PremiumMouseEffect = () => {
   const [isClicking, setIsClicking] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
   const [isMoving, setIsMoving] = useState(false);
-  const [followerPosition, setFollowerPosition] = useState({ x: 0, y: 0 });
   const moveTimeoutRef = useRef(null);
-  const animationRef = useRef(null);
 
   useEffect(() => {
     const updateMousePosition = (e) => {
@@ -54,36 +52,8 @@ const PremiumMouseEffect = () => {
       if (moveTimeoutRef.current) {
         clearTimeout(moveTimeoutRef.current);
       }
-      if (animationRef.current) {
-        cancelAnimationFrame(animationRef.current);
-      }
     };
   }, []);
-
-  // Smooth follower animation
-  useEffect(() => {
-    const animateFollower = () => {
-      setFollowerPosition(prev => {
-        const dx = mousePosition.x - prev.x;
-        const dy = mousePosition.y - prev.y;
-        
-        // Faster following with minimal delay
-        return {
-          x: prev.x + dx * 0.15, // Higher value = faster following
-          y: prev.y + dy * 0.15
-        };
-      });
-      
-      animationRef.current = requestAnimationFrame(animateFollower);
-    };
-    
-    animationRef.current = requestAnimationFrame(animateFollower);
-    return () => {
-      if (animationRef.current) {
-        cancelAnimationFrame(animationRef.current);
-      }
-    };
-  }, [mousePosition]);
 
   const mainCursorStyles = {
     position: 'fixed',
@@ -102,22 +72,7 @@ const PremiumMouseEffect = () => {
   };
 
   const followerStyles = {
-    position: 'fixed',
-    left: `${followerPosition.x}px`,
-    top: `${followerPosition.y}px`,
-    width: isHovering ? '25px' : '20px',
-    height: isHovering ? '25px' : '20px',
-    borderRadius: '50%',
-    backgroundColor: isHovering ? 'rgba(74, 144, 226, 0.6)' : 'rgba(74, 144, 226, 0.3)',
-    border: `1px solid rgba(74, 144, 226, 0.5)`,
-    transform: 'translate(-50%, -50%)',
-    pointerEvents: 'none',
-    zIndex: 9998,
-    transition: 'all 0.2s ease-out',
-    boxShadow: isHovering 
-      ? '0 0 15px rgba(74, 144, 226, 0.4)' 
-      : '0 0 8px rgba(74, 144, 226, 0.2)',
-    opacity: 0.7,
+    display: 'none', // Hide the follower completely
   };
 
   const dotStyles = {
@@ -140,7 +95,7 @@ const PremiumMouseEffect = () => {
       <style>
         {`
           @media (max-width: 768px) {
-            .premium-cursor, .premium-cursor-dot, .premium-cursor-follower {
+            .premium-cursor, .premium-cursor-dot {
               display: none !important;
             }
           }
@@ -204,7 +159,7 @@ const ClickRipple = ({ x, y, onComplete }) => {
   );
 };
 
-// Enhanced Mouse Effect with Click Ripples
+
 const EnhancedMouseEffect = () => {
   const [ripples, setRipples] = useState([]);
 
