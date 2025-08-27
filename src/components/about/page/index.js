@@ -22,17 +22,17 @@ const AboutSection = (props) => {
         {
             title: "Integrity",
             description: "Transparent, ethical practices committed to your success",
-            icon: "🤝"
+            // icon: "🤝"
         },
         {
             title: "Excellence",
             description: "Corporate-standard HR solutions tailored for SMEs",
-            icon: "⭐"
+            // icon: "⭐"
         },
         {
             title: "Innovation",
             description: "Modern HR technology and global best practices",
-            icon: "🚀"
+            // icon: "🚀"
         },
         {
             title: "Partnership",

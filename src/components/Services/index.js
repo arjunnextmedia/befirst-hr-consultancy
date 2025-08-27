@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { 
   Users, 
   TrendingUp, 
-  BarChart3, 
-  Award, 
-  UserCheck, 
-  GraduationCap
+  PieChart, 
+  Calculator, 
+  SearchCheck, 
+  Presentation
 } from 'lucide-react';
 import { service as dummyServices } from '../data/dummyService';
 import { Link } from 'react-router-dom';
@@ -22,16 +22,16 @@ const serviceData = dummyServices.map((service, index) => {
       iconComponent = TrendingUp;
       break;
     case 3:
-      iconComponent = BarChart3;
+      iconComponent = PieChart;
       break;
     case 4:
-      iconComponent = Award;
+      iconComponent = Calculator;
       break;
     case 5:
-      iconComponent = UserCheck;
+      iconComponent = SearchCheck;
       break;
     case 6:
-      iconComponent = GraduationCap;
+      iconComponent = Presentation;
       break;
     default:
       iconComponent = Users;

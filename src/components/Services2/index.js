@@ -11,7 +11,7 @@ class Services2 extends Component {
         var settings = {
             dots: true,
             arrows: true,
-            speed: 3000,
+            speed: 2000,
             slidesToShow: 4,
             slidesToScroll: 1,
             autoplay: true,
