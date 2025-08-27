@@ -41,6 +41,7 @@ import ServiceSinglePage4 from '../ServiceSinglePage/service4';
 import ServiceSinglePage5 from '../ServiceSinglePage/service5';
 import ServiceSinglePage6 from '../ServiceSinglePage/service6';
 import ServiceSinglePage1 from '../ServiceSinglePage/service1';
+import HRChatbot from '../../components/HR-chatbot';
 
 
 const AllRoute = () => {
@@ -96,6 +97,8 @@ const AllRoute = () => {
           <Route path='/register' element={<SignUpPage />} />
           <Route path='/forgot-password' element={<ForgotPassword />} /> */}
         </Routes>
+      <HRChatbot />
+
     </div>
   );
 }

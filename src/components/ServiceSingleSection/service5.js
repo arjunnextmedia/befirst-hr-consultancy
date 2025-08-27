@@ -13,7 +13,7 @@ import ServiceFAQ4 from './service-single-components/serviceFaq4'
 import ServiceFAQ5 from './service-single-components/serviceFaq5'
 import Solutions5 from './service-single-components/solution5'
 import RecruitmentProcess from './service-single-components/RecruitmentProcess'
-import ctsImg from "../../images/services/service-cta-4.jpg"
+import ctsImg from "../../images/services/service-cta-5.jpg"
 
 
 

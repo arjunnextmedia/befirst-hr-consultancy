@@ -6,6 +6,7 @@ const PremiumMouseEffect = () => {
   const [isHovering, setIsHovering] = useState(false);
   const [isMoving, setIsMoving] = useState(false);
   const moveTimeoutRef = useRef(null);
+  const hoverCheckRef = useRef(false);
 
   useEffect(() => {
     const updateMousePosition = (e) => {
@@ -27,27 +28,39 @@ const PremiumMouseEffect = () => {
     const handleMouseDown = () => setIsClicking(true);
     const handleMouseUp = () => setIsClicking(false);
 
-    const handleMouseEnter = (e) => {
+    const handleMouseOver = (e) => {
+      // Check if we're hovering over an interactive element
       const target = e.target;
       const isInteractive = target.matches('a, button, input, textarea, select, [role="button"], .btn, .clickable, .interactive');
-      setIsHovering(isInteractive);
+      
+      if (isInteractive && !hoverCheckRef.current) {
+        setIsHovering(true);
+        hoverCheckRef.current = true;
+      }
     };
 
-    const handleMouseLeave = () => setIsHovering(false);
+    const handleMouseOut = (e) => {
+      // Only set hovering to false if we're leaving the window or the interactive element
+      if (!e.relatedTarget || 
+          !e.relatedTarget.matches('a, button, input, textarea, select, [role="button"], .btn, .clickable, .interactive')) {
+        setIsHovering(false);
+        hoverCheckRef.current = false;
+      }
+    };
 
     // Add event listeners
     document.addEventListener('mousemove', updateMousePosition);
     document.addEventListener('mousedown', handleMouseDown);
     document.addEventListener('mouseup', handleMouseUp);
-    document.addEventListener('mouseover', handleMouseEnter);
-    document.addEventListener('mouseout', handleMouseLeave);
+    document.addEventListener('mouseover', handleMouseOver);
+    document.addEventListener('mouseout', handleMouseOut);
 
     return () => {
       document.removeEventListener('mousemove', updateMousePosition);
       document.removeEventListener('mousedown', handleMouseDown);
       document.removeEventListener('mouseup', handleMouseUp);
-      document.removeEventListener('mouseover', handleMouseEnter);
-      document.removeEventListener('mouseout', handleMouseLeave);
+      document.removeEventListener('mouseover', handleMouseOver);
+      document.removeEventListener('mouseout', handleMouseOut);
       
       if (moveTimeoutRef.current) {
         clearTimeout(moveTimeoutRef.current);
@@ -69,10 +82,6 @@ const PremiumMouseEffect = () => {
     zIndex: 9999,
     transition: 'all 0.2s ease-out',
     opacity: 0.8,
-  };
-
-  const followerStyles = {
-    display: 'none', // Hide the follower completely
   };
 
   const dotStyles = {
@@ -115,12 +124,6 @@ const PremiumMouseEffect = () => {
       <div 
         className="premium-cursor"
         style={mainCursorStyles}
-      />
-
-      {/* Follower Circle */}
-      <div 
-        className="premium-cursor-follower"
-        style={followerStyles}
       />
 
       {/* Center Dot */}

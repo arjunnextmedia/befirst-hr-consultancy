@@ -121,7 +121,7 @@ manage payroll, leave, and attendance internally.`,
 
     {
         id: 5,
-        sIcon: 'fi flaticon-trophy',
+        sIcon: 'fi flaticon-user',
         Link: '/service/recrutement-services',
         title: 'Recrutment Services',
         des: 'Trusted recruitment agency in Kerala connecting businesses with skilled professionals.',

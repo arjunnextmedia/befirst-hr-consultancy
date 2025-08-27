@@ -239,7 +239,7 @@ export default class Header2 extends Component {
                                                                                         color: '#333',
                                                                                         fontSize: '14px',
                                                                                         marginBottom: '4px',
-                                                                                        pointerEvents: 'none' // Prevent child elements from interfering
+                                                                                        pointerEvents: 'none' 
                                                                                     }}
                                                                                 >
                                                                                     {suggestion.title}

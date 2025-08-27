@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import bannerImg from '../../../images/about-banner-2.jpg'; 
+import bannerImg from '../../../images/services/service-banner-2.jpg'; 
 
 const PageTitle = (props) => {
     return (
         <div
             className="wpo-breadcumb-area"
             style={{
-                background: `url(	https://img.freepik.com/premium-photo/cybersecurit…cure-internet-connection_1101054-65660.jpg?w=2000) no-repeat center top / cover`,
+                background: `url(${bannerImg}) no-repeat center top / cover`,
                 position: 'relative',
                 zIndex: 1
             }}

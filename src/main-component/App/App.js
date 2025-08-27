@@ -22,7 +22,6 @@ const App = () => {
       </RouteLoaderWrapper>
       
       <ToastContainer position="top-right" autoClose={3000}/>
-      <HRChatbot />
       {/* <Scrollbar /> */}
       <ConsentModal/>
     </div>
