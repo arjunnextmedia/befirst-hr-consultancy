@@ -9,12 +9,14 @@ import Loader from '../../components/Loader';
 import '../../components/Loader/loader.css';
 import RouteLoaderWrapper from '../../app/RouteLoaderWrapper';
 import ConsentModal from '../../components/consentModal';
+import EnhancedMouseEffect from '../../components/MouseEffect/PremiumMouseEffect';
 
 const App = () => {
 
 
   return (
     <div className="App" id="scrool">
+      <EnhancedMouseEffect />
       <RouteLoaderWrapper>
       <AllRoute />
       </RouteLoaderWrapper>
