@@ -2,7 +2,7 @@ import React from 'react'
 import ServiceSingleSidebar from './service-single-components/sidebar'
 import ServiceFAQ6 from './service-single-components/serviceFaq6'
 import Solutions6 from './service-single-components/solution6'
-import ctsImg from "../../images/services/service-cta-4.jpg"
+import ctsImg from "../../images/services/service-cta-6.jpg"
 
 
 
