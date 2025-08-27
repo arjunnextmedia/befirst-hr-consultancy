@@ -49,7 +49,7 @@ We believe that people are the backbone of every successful business. Our missio
                                         Founder & Principal Consultant
                                     </p>
                             {/* </div> */}
-                            <Link onClick={ClickHandler} to="/about" className="btn theme-btn" >More About</Link>
+                            <Link onClick={ClickHandler} to="/about" className="btn theme-btn" >Read More</Link>
                         </div>
                         </div>
                     </div>

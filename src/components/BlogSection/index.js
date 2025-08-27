@@ -31,7 +31,7 @@ const BlogSlider = () => {
         <div className="row mb-5">
           <div className="col-12 text-center">
             <span className="badge-title">Blog</span>
-            <h2 className="section-heading">Our Blog Packages</h2>
+            <h2 className="section-heading">Blogs and News Updates</h2>
           </div>
         </div>
 
