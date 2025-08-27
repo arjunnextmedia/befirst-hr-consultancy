@@ -5,10 +5,9 @@ const PremiumMouseEffect = () => {
   const [isClicking, setIsClicking] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
   const [isMoving, setIsMoving] = useState(false);
-  const [trail, setTrail] = useState([]);
-  const cursorRef = useRef(null);
-  const trailRef = useRef([]);
+  const [followerPosition, setFollowerPosition] = useState({ x: 0, y: 0 });
   const moveTimeoutRef = useRef(null);
+  const animationRef = useRef(null);
 
   useEffect(() => {
     const updateMousePosition = (e) => {
@@ -24,13 +23,7 @@ const PremiumMouseEffect = () => {
       // Set timeout to detect when mouse stops
       moveTimeoutRef.current = setTimeout(() => {
         setIsMoving(false);
-      }, 80);
-      
-      // Update trail with only 3 positions for smooth following with delay
-      setTimeout(() => {
-        trailRef.current = [...trailRef.current, newPosition].slice(-3);
-        setTrail([...trailRef.current]);
-      }, 50); // Small delay for natural following
+      }, 100);
     };
 
     const handleMouseDown = () => setIsClicking(true);
@@ -48,8 +41,6 @@ const PremiumMouseEffect = () => {
     document.addEventListener('mousemove', updateMousePosition);
     document.addEventListener('mousedown', handleMouseDown);
     document.addEventListener('mouseup', handleMouseUp);
-    
-    // Add hover detection for interactive elements
     document.addEventListener('mouseover', handleMouseEnter);
     document.addEventListener('mouseout', handleMouseLeave);
 
@@ -60,63 +51,87 @@ const PremiumMouseEffect = () => {
       document.removeEventListener('mouseover', handleMouseEnter);
       document.removeEventListener('mouseout', handleMouseLeave);
       
-      // Clear timeout on cleanup
       if (moveTimeoutRef.current) {
         clearTimeout(moveTimeoutRef.current);
+      }
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current);
       }
     };
   }, []);
 
-  const cursorStyles = {
+  // Smooth follower animation
+  useEffect(() => {
+    const animateFollower = () => {
+      setFollowerPosition(prev => {
+        const dx = mousePosition.x - prev.x;
+        const dy = mousePosition.y - prev.y;
+        
+        // Faster following with minimal delay
+        return {
+          x: prev.x + dx * 0.15, // Higher value = faster following
+          y: prev.y + dy * 0.15
+        };
+      });
+      
+      animationRef.current = requestAnimationFrame(animateFollower);
+    };
+    
+    animationRef.current = requestAnimationFrame(animateFollower);
+    return () => {
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current);
+      }
+    };
+  }, [mousePosition]);
+
+  const mainCursorStyles = {
     position: 'fixed',
     left: `${mousePosition.x}px`,
     top: `${mousePosition.y}px`,
-    width: isHovering ? '85px' : isClicking ? '40px' : '55px',
-    height: isHovering ? '85px' : isClicking ? '40px' : '55px',
+    width: isHovering ? '50px' : '35px',
+    height: isHovering ? '50px' : '35px',
     borderRadius: '50%',
-    backgroundColor: !isMoving 
-      ? 'rgba(74, 144, 226, 0.25)' 
-      : isHovering 
-      ? 'rgba(74, 144, 226, 0.12)' 
-      : 'rgba(74, 144, 226, 0.08)',
-    border: `2px solid ${isHovering ? 'rgba(74, 144, 226, 0.6)' : isClicking ? 'rgba(46, 134, 171, 0.8)' : 'rgba(74, 144, 226, 0.5)'}`,
+    backgroundColor: isHovering ? 'rgba(74, 144, 226, 0.2)' : 'transparent',
+    border: `1px solid rgba(74, 144, 226, 0.4)`,
     transform: 'translate(-50%, -50%)',
     pointerEvents: 'none',
-    zIndex: 10001,
-    transition: isMoving 
-      ? 'all 0.02s ease-out' 
-      : 'all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
-    backdropFilter: isHovering ? 'blur(3px)' : 'blur(1px)',
-    boxShadow: !isMoving
-      ? '0 0 45px rgba(74, 144, 226, 0.4), inset 0 0 35px rgba(74, 144, 226, 0.15)'
-      : isHovering 
-      ? '0 0 35px rgba(74, 144, 226, 0.3), inset 0 0 25px rgba(74, 144, 226, 0.08)' 
-      : isClicking 
-      ? '0 0 30px rgba(46, 134, 171, 0.5)' 
-      : '0 0 20px rgba(74, 144, 226, 0.2)',
-    opacity: !isMoving ? 0.9 : (isClicking ? 0.8 : 0.7),
+    zIndex: 9999,
+    transition: 'all 0.2s ease-out',
+    opacity: 0.8,
+  };
+
+  const followerStyles = {
+    position: 'fixed',
+    left: `${followerPosition.x}px`,
+    top: `${followerPosition.y}px`,
+    width: isHovering ? '25px' : '20px',
+    height: isHovering ? '25px' : '20px',
+    borderRadius: '50%',
+    backgroundColor: isHovering ? 'rgba(74, 144, 226, 0.6)' : 'rgba(74, 144, 226, 0.3)',
+    border: `1px solid rgba(74, 144, 226, 0.5)`,
+    transform: 'translate(-50%, -50%)',
+    pointerEvents: 'none',
+    zIndex: 9998,
+    transition: 'all 0.2s ease-out',
+    boxShadow: isHovering 
+      ? '0 0 15px rgba(74, 144, 226, 0.4)' 
+      : '0 0 8px rgba(74, 144, 226, 0.2)',
+    opacity: 0.7,
   };
 
   const dotStyles = {
     position: 'fixed',
     left: `${mousePosition.x}px`,
     top: `${mousePosition.y}px`,
-    width: isHovering ? '10px' : !isMoving ? '8px' : '5px',
-    height: isHovering ? '10px' : !isMoving ? '8px' : '5px',
+    width: '4px',
+    height: '4px',
     borderRadius: '50%',
-    backgroundColor: !isMoving 
-      ? '#4A90E2' 
-      : isHovering 
-      ? '#4A90E2' 
-      : 'rgba(74, 144, 226, 0.9)',
+    backgroundColor: '#4A90E2',
     transform: 'translate(-50%, -50%)',
     pointerEvents: 'none',
-    zIndex: 10002, // Above everything else
-    transition: 'all 0.2s ease-out',
-    boxShadow: !isMoving 
-      ? '0 0 18px rgba(74, 144, 226, 0.8), 0 0 35px rgba(74, 144, 226, 0.4)' 
-      : '0 0 12px rgba(74, 144, 226, 0.6)',
-    opacity: isClicking ? 0.6 : 1,
+    zIndex: 10000,
+    opacity: 0.9,
   };
 
   return (
@@ -125,7 +140,7 @@ const PremiumMouseEffect = () => {
       <style>
         {`
           @media (max-width: 768px) {
-            .premium-cursor, .premium-cursor-dot, .premium-cursor-trail {
+            .premium-cursor, .premium-cursor-dot, .premium-cursor-follower {
               display: none !important;
             }
           }
@@ -136,176 +151,28 @@ const PremiumMouseEffect = () => {
           }
 
           a:hover, button:hover, .btn:hover, .clickable:hover, .interactive:hover {
-            transform: scale(1.05) !important;
+            transform: scale(1.02) !important;
           }
         `}
       </style>
 
-      {/* Main Cursor */}
+      {/* Main Cursor Ring */}
       <div 
         className="premium-cursor"
-        style={cursorStyles}
-        ref={cursorRef}
-      >
-        {isHovering && (
-          <>
-            <div
-              style={{
-                position: 'absolute',
-                top: '50%',
-                left: '50%',
-                transform: 'translate(-50%, -50%)',
-                width: '24px',
-                height: '24px',
-                backgroundColor: 'rgba(74, 144, 226, 0.4)',
-                borderRadius: '50%',
-                opacity: 0.7,
-                animation: 'pulse 1.8s infinite',
-              }}
-            />
-            <div
-              style={{
-                position: 'absolute',
-                top: '50%',
-                left: '50%',
-                transform: 'translate(-50%, -50%)',
-                width: '35px',
-                height: '35px',
-                border: '2px solid rgba(74, 144, 226, 0.5)',
-                borderRadius: '50%',
-                opacity: 0.8,
-                animation: 'pulse 2.2s infinite reverse',
-              }}
-            />
-          </>
-        )}
-        
-        {!isMoving && !isHovering && (
-          <div
-            style={{
-              position: 'absolute',
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-              width: '30px',
-              height: '30px',
-              backgroundColor: 'rgba(74, 144, 226, 0.3)',
-              borderRadius: '50%',
-              opacity: 0.8,
-              animation: 'breathe 2.5s infinite',
-            }}
-          />
-        )}
-      </div>
+        style={mainCursorStyles}
+      />
+
+      {/* Follower Circle */}
+      <div 
+        className="premium-cursor-follower"
+        style={followerStyles}
+      />
 
       {/* Center Dot */}
       <div 
         className="premium-cursor-dot"
         style={dotStyles}
       />
-
-      {/* Trail Effect - 3 Circles with decreasing sizes and proper layering */}
-      {trail.map((point, index) => {
-        const isLargest = index === trail.length - 1; // Most recent position (largest)
-        const isMedium = index === trail.length - 2; // Second most recent
-        const isSmallest = index === trail.length - 3; // Oldest position (smallest)
-        
-        let size, opacity, zIndex;
-        
-        if (isLargest) {
-          size = 38; // Largest trailing circle (smaller than main cursor)
-          opacity = isMoving ? 0.7 : 0.25;
-          zIndex = 10000; // Below main cursor
-        } else if (isMedium) {
-          size = 28; // Medium circle
-          opacity = isMoving ? 0.55 : 0.18;
-          zIndex = 9999; // Below largest trail
-        } else if (isSmallest) {
-          size = 20; // Smallest circle
-          opacity = isMoving ? 0.35 : 0.12;
-          zIndex = 9998; // Below medium trail
-        }
-        
-        return (
-          <div
-            key={index}
-            className="premium-cursor-trail"
-            style={{
-              position: 'fixed',
-              left: `${point.x}px`,
-              top: `${point.y}px`,
-              width: `${size}px`,
-              height: `${size}px`,
-              borderRadius: '50%',
-              backgroundColor: 'rgba(74, 144, 226, 0.6)',
-              border: `1px solid rgba(74, 144, 226, 0.3)`,
-              transform: 'translate(-50%, -50%)',
-              pointerEvents: 'none',
-              zIndex: zIndex,
-              opacity: opacity,
-              transition: 'all 0.15s cubic-bezier(0.4, 0, 0.2, 1)',
-              boxShadow: `0 0 ${size/3}px rgba(74, 144, 226, 0.3)`,
-              backdropFilter: 'blur(0.5px)',
-            }}
-          />
-        );
-      })}
-
-      {/* Keyframes for animations */}
-      <style>
-        {`
-          @keyframes pulse {
-            0% {
-              transform: translate(-50%, -50%) scale(1);
-              opacity: 0.7;
-            }
-            50% {
-              transform: translate(-50%, -50%) scale(1.3);
-              opacity: 0.4;
-            }
-            100% {
-              transform: translate(-50%, -50%) scale(1);
-              opacity: 0.7;
-            }
-          }
-
-          @keyframes breathe {
-            0% {
-              transform: translate(-50%, -50%) scale(1);
-              opacity: 0.8;
-            }
-            50% {
-              transform: translate(-50%, -50%) scale(1.1);
-              opacity: 0.5;
-            }
-            100% {
-              transform: translate(-50%, -50%) scale(1);
-              opacity: 0.8;
-            }
-          }
-
-          @keyframes ripple {
-            0% {
-              transform: translate(-50%, -50%) scale(0);
-              opacity: 0.8;
-            }
-            100% {
-              transform: translate(-50%, -50%) scale(2);
-              opacity: 0;
-            }
-          }
-
-          .cursor-ripple {
-            position: fixed;
-            border: 2px solid rgba(74, 144, 226, 0.6);
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 9997;
-            animation: ripple 0.8s ease-out;
-            background: rgba(74, 144, 226, 0.1);
-          }
-        `}
-      </style>
     </>
   );
 };
@@ -313,18 +180,25 @@ const PremiumMouseEffect = () => {
 // Click Ripple Component (separate for better performance)
 const ClickRipple = ({ x, y, onComplete }) => {
   useEffect(() => {
-    const timer = setTimeout(onComplete, 800);
+    const timer = setTimeout(onComplete, 600);
     return () => clearTimeout(timer);
   }, [onComplete]);
 
   return (
     <div
-      className="cursor-ripple"
       style={{
+        position: 'fixed',
         left: `${x}px`,
         top: `${y}px`,
-        width: '80px',
-        height: '80px',
+        width: '60px',
+        height: '60px',
+        borderRadius: '50%',
+        border: '2px solid rgba(74, 144, 226, 0.5)',
+        transform: 'translate(-50%, -50%)',
+        pointerEvents: 'none',
+        zIndex: 9997,
+        animation: 'ripple 0.6s ease-out',
+        background: 'rgba(74, 144, 226, 0.1)',
       }}
     />
   );
@@ -364,6 +238,22 @@ const EnhancedMouseEffect = () => {
           onComplete={() => removeRipple(ripple.id)}
         />
       ))}
+      
+      {/* Keyframes for animations */}
+      <style>
+        {`
+          @keyframes ripple {
+            0% {
+              transform: translate(-50%, -50%) scale(0);
+              opacity: 0.8;
+            }
+            100% {
+              transform: translate(-50%, -50%) scale(1.5);
+              opacity: 0;
+            }
+          }
+        `}
+      </style>
     </>
   );
 };
