@@ -37,9 +37,9 @@ const ServiceSinglePage1 = () => {
     return (
         <>
             <SEO
-                title="Human Capital Development Services in Kerala | Befirst HR & Management Consultancy"
-                description="Boost employee engagement, retention, and productivity with Befirst HR & Management Consultancy’s Human Capital Development services in Kerala. Serving Kozhikode, Kochi, Trivandrum & beyond."
-                keywords={"human capital development Kerala, employee engagement Kerala, HR consultancy Kozhikode, HR consulting Kochi, HR strategy Kerala, retention strategy Kerala, employee orientation Kerala, HR solutions Trivandrum, business HR consultancy Kerala, leadership HR services Kerala"}
+                title="HR Consultancy Services in Kerala | Befirst HR & Management Consultancy"
+                description="Expert HR consultancy in Kerala for startups, SMEs & corporates. HR audits, policy manuals, structuring, appraisals, onboarding & compliance. Boost growth & efficiency today!"
+                keywords={"HR consultancy Kerala, HR services Kerala, HR audits Kerala, policy manuals Kerala, HR outsourcing Kerala, HR structuring Kerala, performance management Kerala, HR consulting for startups Kerala, HR solutions Kerala, corporate HR consulting Kerala, C-suite HR support Kerala, SME HR consultancy Kerala"}
             />
             <Navbar2 />
             <PageTitle pageTitle={'HR Consulting Services'} pagesub={'Services'} serviceTitle={'HR Consulting Services'} />

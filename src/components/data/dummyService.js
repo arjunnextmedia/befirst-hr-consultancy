@@ -122,8 +122,8 @@ manage payroll, leave, and attendance internally.`,
     {
         id: 5,
         sIcon: 'fi flaticon-user',
-        Link: '/service/recrutement-services',
-        title: 'Recrutment Services',
+        Link: '/service/recruitment-services',
+        title: 'Recruitment Services',
         des: 'Trusted recruitment agency in Kerala connecting businesses with skilled professionals.',
         body: `Our team supports businesses in implementing payroll
 systems (e.g., Zoho, Tally) and provides hands-on training to

@@ -15,7 +15,7 @@ const ServiceSingleSidebar = ({ CTAIMG }) => {
                         <li><Link to="/service/human-capital-development">Human Capital Development</Link></li>
                         <li><Link to="/service/staff-&-leadership-training">Staff & Leadership Training</Link></li>
                         <li><Link to="/service/payroll=setup-&-training">Payroll Setup & Training</Link></li>
-                        <li><Link to="/service/recrutement-services">Recrutment Services</Link></li>
+                        <li><Link to="/service/recruitment-services">Recruitment Services</Link></li>
                     </ul>
                 </div>
                 {/* <div className="wpo-newsletter-widget widget">

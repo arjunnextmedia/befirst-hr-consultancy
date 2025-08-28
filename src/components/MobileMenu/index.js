@@ -40,12 +40,12 @@ const menus = [
             {
                 id: 12,
                 title: 'Founder’s Vision',
-                link: '/about2'
+                link: '/about/founders-vision'
             },
             {
                 id: 13,
                 title: 'Our Mission & Values',
-                link: '/about3'
+                link: '/about/mission-&-values'
             },
         ]
     },

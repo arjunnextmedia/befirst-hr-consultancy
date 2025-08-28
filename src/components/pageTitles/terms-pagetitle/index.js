@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import bannerImg from '../../../images/about-banner-2.jpg'; 
+import bannerImg from '../../../images/document/terms-banner-1.jpg'; 
 
 const PageTitle = (props) => {
     return (

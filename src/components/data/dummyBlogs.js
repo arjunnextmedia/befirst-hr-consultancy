@@ -11,7 +11,7 @@ export const blogs = [
       title: 'How SMEs Can Build a Strong Employer Brand in Kerala',
       description: 'Discover strategies for SMEs in Kerala to enhance their employer brand, attract top talent, and foster a positive workplace culture.',
       time: '13 AUG, 21',
-      link: '/blog-details/blog1',
+      link: '/blogs/blog1/blog-details',
     },
     {
       blogImg: blog2,
@@ -19,7 +19,7 @@ export const blogs = [
       description: 'Learn how recruitment outsourcing helps Kerala SMEs save time, cut costs, and attract the right talent.',
 
       time: '14 AUG, 21',
-      link: '/blog-details/blog2',
+      link: '/blogs/blog2/blog-details',
     },
     {
       blogImg: blog3,
@@ -27,7 +27,7 @@ export const blogs = [
       description: 'Discover the top payroll mistakes Kerala SMEs must avoid to stay compliant, accurate, and stress-free.',
 
       time: '15 AUG, 21',
-      link: '/blog-details/blog3',
+      link: '/blogs/blog3/blog-details',
     },
     {
       blogImg: blog4,
@@ -35,7 +35,7 @@ export const blogs = [
       description: 'A simple HR compliance guide to help Kerala SMEs stay compliant, avoid risks, and run smoothly.',
 
       time: '15 AUG, 21',
-      link: '/blog-details/blog4',
+      link: '/blogs/blog4/blog-details',
     },
     {
       blogImg: blog5,
@@ -43,7 +43,7 @@ export const blogs = [
       description: 'Guide for Kerala SMEs to choose the right HR consultancy in Calicut to reduce turnover and hiring mistakes.',
 
       time: '15 AUG, 21',
-      link: '/blog-details/blog5',
+      link: '/blogs/blog5/blog-details',
     },
   ];
 

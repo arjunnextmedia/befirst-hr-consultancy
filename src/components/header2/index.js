@@ -133,8 +133,8 @@ export default class Header2 extends Component {
                                                     </Link>
                                                     <ul className="sub-menu">
                                                         <li><Link onClick={ClickHandler} to="/about">Who We Are</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/about2">Founder’s Vision</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/about3">Our Mission & Values</Link></li>
+                                                        <li><Link onClick={ClickHandler} to="/about/founders-vision">Founder’s Vision</Link></li>
+                                                        <li><Link onClick={ClickHandler} to="/about/mission-&-values">Our Mission & Values</Link></li>
                                                     </ul>
                                                 </li>
                                                 <li >
