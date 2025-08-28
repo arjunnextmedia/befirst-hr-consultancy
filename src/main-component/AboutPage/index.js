@@ -5,8 +5,6 @@ import FunFact from '../../components/FunFact'
 import Footer from '../../components/footer'
 import Scrollbar from '../../components/scrollbar'
 import AboutSection from '../../components/about/page';
-import VisionMission from '../../components/visionMission';
-import HRChatbot from '../../components/HR-chatbot';
 import SEO from '../../components/seo';
 
 

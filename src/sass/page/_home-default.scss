@@ -727,10 +727,10 @@
                 text-transform: uppercase;
                 @include rounded-border(6px);
                 transition: all .3s;
-                &:hover{
-                    background: #1534d0;
-                    color:$white;
-                }
+                // &:hover{
+                //     background: #1534d0;
+                //     color:$white;
+                // }
             }
         }
     }

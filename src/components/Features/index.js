@@ -51,12 +51,12 @@ const Features = (props) => {
     const getCardHoverStyle = (isHovered) => ({
         ...cardStyle,
         transform: isHovered ? 'translateY(-12px) scale(1.03)' : 'translateY(0) scale(1)',
-        boxShadow: isHovered 
-            ? `0 25px 50px ${brandColors.primary}40, 0 0 0 1px ${brandColors.primary}20` 
-            : `0 4px 20px ${brandColors.primary}15`,
-        background: isHovered 
-            ? 'linear-gradient(145deg, #ffffff 0%, #f1f5f9 100%)' 
-            : 'linear-gradient(145deg, #ffffff 0%, #f8fafc 100%)',
+        // boxShadow: isHovered 
+        //     ? `0 25px 50px ${brandColors.primary}40, 0 0 0 1px ${brandColors.primary}20` 
+        //     : `0 4px 20px ${brandColors.primary}15`,
+        // background: isHovered 
+        //     ? 'linear-gradient(145deg, #ffffff 0%, #f1f5f9 100%)' 
+        //     : 'linear-gradient(145deg, #ffffff 0%, #f8fafc 100%)',
     });
 
     // Premium overlay effect
@@ -139,12 +139,12 @@ const Features = (props) => {
 
     const getIconWrapperHoverStyle = (isHovered) => ({
         ...iconWrapperStyle,
-        background: isHovered 
-            ? `linear-gradient(135deg, ${brandColors.secondary} 0%, ${brandColors.accent} 100%)`
-            : `linear-gradient(135deg, ${brandColors.primary} 0%, ${brandColors.secondary} 100%)`,
-        boxShadow: isHovered 
-            ? `0 15px 40px ${brandColors.primary}70, 0 0 0 8px ${brandColors.primary}20`
-            : `0 8px 25px ${brandColors.primary}50`,
+        // background: isHovered 
+        //     ? `linear-gradient(135deg, ${brandColors.secondary} 0%, ${brandColors.accent} 100%)`
+        //     : `linear-gradient(135deg, ${brandColors.primary} 0%, ${brandColors.secondary} 100%)`,
+        // boxShadow: isHovered 
+        //     ? `0 15px 40px ${brandColors.primary}70, 0 0 0 8px ${brandColors.primary}20`
+        //     : `0 8px 25px ${brandColors.primary}50`,
         transform: isHovered ? 'scale(1.1)' : 'scale(1)',
     });
 
@@ -340,10 +340,10 @@ const Features = (props) => {
                                         <div style={getOverlayHoverStyle(isHovered)}></div>
                                         
                                         {/* Ripple Effect */}
-                                        <div style={getRippleHoverStyle(isHovered)}></div>
+                                        {/* <div style={getRippleHoverStyle(isHovered)}></div> */}
                                         
                                         {/* Glow Effect */}
-                                        <div style={getGlowHoverStyle(isHovered)}></div>
+                                        {/* <div style={getGlowHoverStyle(isHovered)}></div> */}
                                         
                                         {/* Floating Particles */}
                                         <div style={getParticlesHoverStyle(isHovered)}>
