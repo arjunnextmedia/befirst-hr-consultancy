@@ -8,13 +8,13 @@ import Scrollbar from '../../components/scrollbar'
 
 const ServicePage =() => {
     return(
-        <Fragment>
+        <>
             <Navbar2/>
             <PageTitle pageTitle={'Services'} pagesub={'Services'}/> 
             <Services/>
             <Footer/>
             <Scrollbar/>
-        </Fragment>
+        </>
     )
 };
 export default ServicePage;

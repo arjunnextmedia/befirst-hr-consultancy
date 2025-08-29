@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { service } from "../data/dummyService";
+import { Calculator, PieChart, Presentation, SearchCheck, TrendingUp, Users } from "lucide-react";
 
 
 class Services2 extends Component {
@@ -53,6 +54,27 @@ class Services2 extends Component {
             window.scrollTo(10, 0);
         }
 
+
+          // Function to render the appropriate icon based on the service ID
+        const renderServiceIcon = (serviceId) => {
+            switch(serviceId) {
+                case 1:
+                    return <Users size={45} />;
+                case 2:
+                    return <TrendingUp size={45} />;
+                case 3:
+                    return <PieChart size={45} />;
+                case 4:
+                    return <Calculator size={45} />;
+                case 5:
+                    return <SearchCheck size={45} />;
+                case 6:
+                    return <Presentation size={45} />;
+                default:
+                    return <Users size={45} />;
+            }
+        }
+
         return (
             <section className={`wpo-service-section section-padding ${this.props.srvClass}`}>
                 <div className="container">
@@ -72,13 +94,13 @@ class Services2 extends Component {
                                 <div className="col-lg-4 col-md-6 col-12" key={sitem}>
                                     <div className="wpo-service-item">
                                         <div className="wpo-service-icon">
-                                            <div className="icon">
-                                                <i className={service.sIcon}></i>
+                                          <div className="icon">
+                                                {renderServiceIcon(service.id)}
                                             </div>
                                         </div>
                                         <div className="wpo-service-text">
                                             <h2 style={{fontSize:'25px'}}>
-                                                <Link onClick={ClickHandler} to={`/service-single/${service.id}`}>
+                                                <Link onClick={ClickHandler} to={`${service.Link}`}>
                                                     {service.title}
                                                 </Link>
                                             </h2>
@@ -184,9 +206,14 @@ class Services2 extends Component {
                         line-height: 1;
                     }
 
-                    .wpo-service-item:hover .wpo-service-icon .icon i {
-                        color: #fff;
-                    }
+                          .wpo-service-icon .icon svg {
+            color: #3757f7;
+            transition: all 0.3s ease;
+          }
+
+          .wpo-service-item:hover .wpo-service-icon .icon svg {
+            color: #3757f7;
+          }
 
                     .wpo-service-text {
                         flex-grow: 1;
