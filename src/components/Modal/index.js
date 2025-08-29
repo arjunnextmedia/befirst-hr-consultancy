@@ -173,7 +173,7 @@ export default class ConsultingModal extends Component {
 
 
   sendToWhatsApp = () => {
-    const whatsappNumber = "9847634709"; // Include country code (e.g., 91 for India)
+    const whatsappNumber = "919400905954"; 
     const message = WhatsAppConsultMessageFormat(this.state.formData);
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
     window.open(whatsappUrl, '_blank');

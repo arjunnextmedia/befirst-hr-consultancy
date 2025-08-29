@@ -181,7 +181,7 @@ const TermsOfUse = () => {
                                         rel="noopener noreferrer"
                                         style={{ textDecoration: 'none',  }}
 
-                > +91 94009 05954</a> </li>
+                > +91 9400905954</a> </li>
                 <li>
                   🏢 Address: Innovation Tower, Thondayad Junction, near
                   Kannankandy E-store, Calicut, Kerala, India

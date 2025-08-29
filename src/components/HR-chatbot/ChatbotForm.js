@@ -52,7 +52,7 @@ import toast from 'react-hot-toast';
     // Format the WhatsApp message
     const message = generateWhatsAppMessage();
     const encodedMessage = encodeURIComponent(message);
-    const whatsappNumber = "9847634709"; // Replace with your number
+    const whatsappNumber = "919400905954"; 
     
     // Open WhatsApp with the pre-filled message
     window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');

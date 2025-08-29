@@ -25,10 +25,11 @@ const Footer = (props) => {
                                 <p>Empowering businesses in Kerala to hire smarter, stay compliant, and build workplaces where people thrive.</p>
                                 <ul>
                                     <li><a
-                                        href="/"
+                                        href="https://www.facebook.com/share/1BZpRjpJGm/?mibextid=wwXIfr"
                                         target='_blank'
                                         rel="noreferrer"
-                                    ><i className="ti-facebook"></i></a></li>
+                                    ><i className="ti-facebook"></i>
+                                    </a></li>
                                     <li><a href="https://www.instagram.com/befirsthrm/"
                                         target='_blank'
                                         rel="noreferrer"
@@ -65,7 +66,7 @@ const Footer = (props) => {
                                                 rel="noopener noreferrer"
                                                 style={{ textDecoration: 'none', color: 'inherit' }}
                                             >
-                                                +91 94009 05954
+                                                +91 9400905954
                                             </a>
                                         </li>
                                         <li>

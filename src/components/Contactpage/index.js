@@ -64,7 +64,7 @@ const Contactpage = () => {
                                         rel="noopener noreferrer"
                                         style={{ textDecoration: 'none', color: 'inherit' }}
                                     >
-                                        +91 94009 05954
+                                        +91 9400905954
                                     </a>
                                             </p>
                                         </div>

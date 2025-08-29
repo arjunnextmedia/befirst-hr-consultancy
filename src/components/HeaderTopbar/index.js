@@ -20,7 +20,7 @@ const HeaderTopbar = () => {
                             <ul>
                                 <li>Visit our social pages</li>
                                 <li><a 
-                                href="/"
+                                href="https://www.facebook.com/share/1BZpRjpJGm/?mibextid=wwXIfr"
                                  target='_blank' 
                                     rel="noreferrer"
                                 ><i className="ti-facebook"></i></a></li>
